@@ -8,7 +8,14 @@ const aiTools = [
       { name: 'ChatGPT', url: 'https://chat.openai.com', desc: 'OpenAI的AI对话助手', icon: '🤖' },
       { name: 'Claude', url: 'https://claude.ai', desc: 'Anthropic的AI助手', icon: '🧠' },
       { name: 'Gemini', url: 'https://gemini.google.com', desc: 'Google的AI对话模型', icon: '💎' },
+      { name: '千问', url: 'https://tongyi.aliyun.com', desc: '阿里AI大模型', icon: '🌙' },
+      { name: '豆包', url: 'https://www.doubao.com/chat', desc: '字节AI助手', icon: '🎯' },
+      { name: 'Kimi', url: 'https://kimi.moonshot.cn', desc: '月之暗面AI助手', icon: '🌕' },
       { name: '文心一言', url: 'https://yiyan.baidu.com', desc: '百度AI对话产品', icon: '📖' },
+      { name: '腾讯混元', url: 'https://hunyuan.tencent.com', desc: '腾讯大模型', icon: '💫' },
+      { name: '智谱清言', url: 'https://chatglm.cn', desc: '智谱AI对话助手', icon: '🎨' },
+      { name: '讯飞星火', url: 'https://xinghuo.xfyun.cn', desc: '科大讯飞AI助手', icon: '✨' },
+      { name: 'OpenClaw', url: 'https://openclaw.ai', desc: '开源个人AI智能体', icon: '🦞' },
     ]
   },
   {
@@ -17,7 +24,11 @@ const aiTools = [
       { name: 'Midjourney', url: 'https://www.midjourney.com', desc: '顶级AI绘画工具', icon: '🎨' },
       { name: 'Stable Diffusion', url: 'https://stability.ai', desc: '开源AI绘画模型', icon: '🖼️' },
       { name: 'DALL·E 3', url: 'https://openai.com/dall-e-3', desc: 'OpenAI图像生成', icon: '🌟' },
+      { name: 'Nano Banana 2', url: 'https://ai.studio/banana', desc: '谷歌AI图像生成', icon: '🍌' },
+      { name: '文心一格', url: 'https://yige.baidu.com', desc: '百度AI绘画平台', icon: '🖌️' },
       { name: '通义万相', url: 'https://tongyi.aliyun.com/wanxiang', desc: '阿里AI绘画', icon: '🎭' },
+      { name: 'LiblibAI', url: 'https://www.liblibalib.cn', desc: '哩布哩布AI创作平台', icon: '🎪' },
+      { name: '触站AI', url: 'https://www.chuzaipc.com', desc: 'AI绘画社区平台', icon: '🎨' },
     ]
   },
   {
@@ -27,6 +38,9 @@ const aiTools = [
       { name: 'Cursor', url: 'https://cursor.sh', desc: 'AI代码编辑器', icon: '✏️' },
       { name: 'CodeWhisperer', url: 'https://aws.amazon.com/codewhisperer', desc: 'AWS AI编程工具', icon: '🔧' },
       { name: '通义灵码', url: 'https://tongyi.aliyun.com/lingma', desc: '阿里AI编程助手', icon: '⚡' },
+      { name: 'Qoder', url: 'https://qoder.com', desc: '阿里Agentic编程平台', icon: '🚀' },
+      { name: 'Trae', url: 'https://www.trae.com.cn', desc: '字节AI代码编辑器', icon: '⭐' },
+      { name: 'CodeBuddy', url: 'https://www.codebuddy.ai', desc: '腾讯云AI编程助手', icon: '💡' },
     ]
   },
   {
@@ -36,6 +50,12 @@ const aiTools = [
       { name: 'Jasper', url: 'https://www.jasper.ai', desc: 'AI营销文案', icon: '📢' },
       { name: 'Copy.ai', url: 'https://www.copy.ai', desc: 'AI文案生成', icon: '📋' },
       { name: '秘塔写作猫', url: 'https://xiezuocat.com', desc: '中文AI写作', icon: '🐱' },
+    ]
+  },
+  {
+    category: 'AI教程',
+    items: [
+      { name: 'AI编程学习', url: 'https://mp.weixin.qq.com/s/2aKxnAuqC97nqddD5UhTJA', desc: 'AI编程教程分享', icon: '📚' },
     ]
   }
 ]
