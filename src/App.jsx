@@ -65,6 +65,7 @@ function App() {
   const [activeCategory, setActiveCategory] = useState('全部')
   const [showLiveModal, setShowLiveModal] = useState(true)
   const [showLiveButton, setShowLiveButton] = useState(false)
+  const [sidebarOpen, setSidebarOpen] = useState(false)
 
   const categories = ['全部', ...aiTools.map(t => t.category)]
 
@@ -89,8 +90,8 @@ function App() {
       setShowLiveButton(true) // 显示悬浮按钮
     }
   })
-  
-  const filteredTools = aiTools.flatMap(category => 
+
+  const filteredTools = aiTools.flatMap(category =>
     category.items.map(item => ({ ...item, category: category.category }))
   ).filter(tool => {
     const matchesSearch = tool.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -101,20 +102,68 @@ function App() {
 
   return (
     <div className="app">
-      <header className="header">
-        <h1>🚀 白开水AI</h1>
-        <p>发现最实用的AI工具，提升工作效率 - 专业AI导航平台</p>
-      </header>
+      {/* 侧边栏 */}
+      <aside className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
+        <div className="sidebar-header">
+          <h2 className="sidebar-logo">🚀 白开水AI</h2>
+          <button className="sidebar-close" onClick={() => setSidebarOpen(false)}>
+            ✕
+          </button>
+        </div>
+        <nav className="sidebar-nav">
+          <div className="nav-section">
+            <h3 className="nav-section-title">分类导航</h3>
+            <ul className="nav-list">
+              {categories.map(cat => (
+                <li key={cat}>
+                  <button
+                    className={`nav-item ${activeCategory === cat ? 'active' : ''}`}
+                    onClick={() => {
+                      setActiveCategory(cat)
+                      setSidebarOpen(false)
+                    }}
+                  >
+                    {cat === '全部' ? '🏠 全部工具' : getCategoryIcon(cat) + ' ' + cat}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </nav>
+        <div className="sidebar-footer">
+          <p className="sidebar-copyright">© 2026 白开水AI</p>
+        </div>
+      </aside>
 
-      <div className="search-section">
-        <input
-          type="text"
-          className="search-input"
-          placeholder="搜索AI工具..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-      </div>
+      {/* 移动端遮罩 */}
+      {sidebarOpen && (
+        <div className="sidebar-overlay" onClick={() => setSidebarOpen(false)}></div>
+      )}
+
+      {/* 主内容区 */}
+      <div className="main-wrapper">
+        {/* 移动端顶部栏 */}
+        <div className="mobile-header">
+          <button className="menu-toggle" onClick={() => setSidebarOpen(true)}>
+            ☰
+          </button>
+          <h1 className="mobile-title">白开水AI</h1>
+        </div>
+
+        <header className="header">
+          <h1>🚀 白开水AI</h1>
+          <p>发现最实用的AI工具，提升工作效率 - 专业AI导航平台</p>
+        </header>
+
+        <div className="search-section">
+          <input
+            type="text"
+            className="search-input"
+            placeholder="搜索AI工具..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </div>
 
       <div className="category-tabs">
         {categories.map(cat => (
@@ -201,48 +250,61 @@ function App() {
         )}
       </main>
 
-      {/* 直播预告悬浮按钮 */}
-      {showLiveButton && (
-        <button className="live-float-button" onClick={handleOpenModal}>
-          <span className="live-button-icon">🔴</span>
-          <span className="live-button-text">直播</span>
-        </button>
-      )}
+        {/* 直播预告悬浮按钮 */}
+        {showLiveButton && (
+          <button className="live-float-button" onClick={handleOpenModal}>
+            <span className="live-button-icon">🔴</span>
+            <span className="live-button-text">直播</span>
+          </button>
+        )}
 
-      <section className="about-section">
-        <div className="about-content">
-          <h2 className="about-title">📖 关于我们</h2>
-          <p className="about-text">
-            白开水 AI 社区致力于分享最实用、最有价值的 AI 工具和资源，
-            帮助每个人更好地利用人工智能提升工作效率。
-            我们相信 AI 应该像白开水一样纯净、易用、人人可及。
+        <section className="about-section">
+          <div className="about-content">
+            <h2 className="about-title">📖 关于我们</h2>
+            <p className="about-text">
+              白开水 AI 社区致力于分享最实用、最有价值的 AI 工具和资源，
+              帮助每个人更好地利用人工智能提升工作效率。
+              我们相信 AI 应该像白开水一样纯净、易用、人人可及。
+            </p>
+            <a
+              href="https://www.python4office.cn/bks-ai/readme/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about-link"
+            >
+              加入 AI 交流群 →
+            </a>
+          </div>
+        </section>
+
+        <footer className="footer">
+          <p>© 2026 AI工具导航 | 让AI成为你的得力助手</p>
+          <p>
+            <a
+              href="https://beian.miit.gov.cn/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icp-link"
+            >
+              鲁ICP备2021040536号-2
+            </a>
           </p>
-          <a
-            href="https://www.python4office.cn/bks-ai/readme/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="about-link"
-          >
-            加入 AI 交流群 →
-          </a>
-        </div>
-      </section>
-
-      <footer className="footer">
-        <p>© 2026 AI工具导航 | 让AI成为你的得力助手</p>
-        <p>
-          <a
-            href="https://beian.miit.gov.cn/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icp-link"
-          >
-            鲁ICP备2021040536号-2
-          </a>
-        </p>
-      </footer>
+        </footer>
+      </div>
     </div>
   )
+}
+
+// 获取分类图标
+function getCategoryIcon(category) {
+  const icons = {
+    'AI对话': '💬',
+    'AI绘画': '🎨',
+    'AI编程': '💻',
+    'AI写作': '✍️',
+    'AI教程': '📚'
+  }
+  return icons[category] || '📦'
 }
 
 export default App
