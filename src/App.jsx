@@ -123,7 +123,7 @@ function App() {
             </div>
             <div className="modal-actions">
               <a
-                href="https://mp.weixin.qq.com/s/Fobjlh6BS4RlyuHc58wQ0A"
+                href="https://mp.weixin.qq.com/s/wsiwPbCCPgmH6MuZn0WtqQ"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="modal-btn modal-btn-primary"
