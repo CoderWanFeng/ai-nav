@@ -43,8 +43,32 @@ const aiTools = [
 function App() {
   const [searchTerm, setSearchTerm] = useState('')
   const [activeCategory, setActiveCategory] = useState('全部')
+  const [showLiveModal, setShowLiveModal] = useState(true)
+  const [showLiveButton, setShowLiveButton] = useState(false)
 
   const categories = ['全部', ...aiTools.map(t => t.category)]
+
+  // 关闭弹窗
+  const handleCloseModal = () => {
+    setShowLiveModal(false)
+    setShowLiveButton(true) // 显示悬浮按钮
+    localStorage.setItem('liveModalShown', 'true')
+  }
+
+  // 重新打开弹窗
+  const handleOpenModal = () => {
+    setShowLiveModal(true)
+    setShowLiveButton(false)
+  }
+
+  // 检查是否已经显示过
+  useState(() => {
+    const hasShown = localStorage.getItem('liveModalShown')
+    if (hasShown === 'true') {
+      setShowLiveModal(false)
+      setShowLiveButton(true) // 显示悬浮按钮
+    }
+  })
   
   const filteredTools = aiTools.flatMap(category => 
     category.items.map(item => ({ ...item, category: category.category }))
@@ -83,6 +107,33 @@ function App() {
           </button>
         ))}
       </div>
+
+      {/* 直播预告弹窗 */}
+      {showLiveModal && (
+        <div className="modal-overlay" onClick={handleCloseModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={handleCloseModal}>×</button>
+            <h2 className="modal-title">🎥 直播预告</h2>
+            <div className="modal-live-info">
+              <div className="modal-live-item">
+                <div className="modal-live-time">⏰ 2026 年 3 月 4 日（周三）</div>
+                <h3 className="modal-live-topic">10 分钟搭建 OpenClaw</h3>
+                <p className="modal-live-desc">马上预约，让龙虾跑起来</p>
+              </div>
+            </div>
+            <div className="modal-actions">
+              <a
+                href="https://mp.weixin.qq.com/s/Fobjlh6BS4RlyuHc58wQ0A"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="modal-btn modal-btn-primary"
+              >
+                📅 立即预约
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
 
       <main className="main-content">
         {activeCategory === '全部' && !searchTerm ? (
@@ -129,6 +180,33 @@ function App() {
           </div>
         )}
       </main>
+
+      {/* 直播预告悬浮按钮 */}
+      {showLiveButton && (
+        <button className="live-float-button" onClick={handleOpenModal}>
+          <span className="live-button-icon">🔴</span>
+          <span className="live-button-text">直播</span>
+        </button>
+      )}
+
+      <section className="about-section">
+        <div className="about-content">
+          <h2 className="about-title">📖 关于我们</h2>
+          <p className="about-text">
+            白开水 AI 社区致力于分享最实用、最有价值的 AI 工具和资源，
+            帮助每个人更好地利用人工智能提升工作效率。
+            我们相信 AI 应该像白开水一样纯净、易用、人人可及。
+          </p>
+          <a
+            href="https://www.python4office.cn/bks-ai/readme/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="about-link"
+          >
+            加入 AI 交流群 →
+          </a>
+        </div>
+      </section>
 
       <footer className="footer">
         <p>© 2026 AI工具导航 | 让AI成为你的得力助手</p>
