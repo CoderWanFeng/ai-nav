@@ -113,7 +113,7 @@ function App() {
         <div className="modal-overlay" onClick={handleCloseModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="modal-close" onClick={handleCloseModal}>×</button>
-            <h2 className="modal-title">🎥 直播预告</h2>
+            <h2 className="modal-title">🎁 福利教程</h2>
             <div className="modal-live-info">
               <div className="modal-live-item">
                 <div className="modal-live-time">⏰ 2026 年 3 月 4 日（周三）</div>
@@ -123,12 +123,12 @@ function App() {
             </div>
             <div className="modal-actions">
               <a
-                href="https://mp.weixin.qq.com/s/Fobjlh6BS4RlyuHc58wQ0A"
+                href="https://www.bilibili.com/video/BV1c1PizAEQB"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="modal-btn modal-btn-primary"
               >
-                📅 立即预约
+                🎁 点击领取
               </a>
             </div>
           </div>
