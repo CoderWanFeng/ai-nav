@@ -33,9 +33,15 @@ const aiTools = [
     category: 'AI写作',
     items: [
       { name: 'Notion AI', url: 'https://www.notion.so/product/ai', desc: '智能写作助手', icon: '📝' },
-      { name: 'Jasper', url: 'https://www.jasper.ai', desc: 'AI营销文案', icon: '📢' },
-      { name: 'Copy.ai', url: 'https://www.copy.ai', desc: 'AI文案生成', icon: '📋' },
-      { name: '秘塔写作猫', url: 'https://xiezuocat.com', desc: '中文AI写作', icon: '🐱' },
+      { name: 'Jasper', url: 'https://www.jasper.ai', desc: 'AI 营销文案', icon: '📢' },
+      { name: 'Copy.ai', url: 'https://www.copy.ai', desc: 'AI 文案生成', icon: '📋' },
+      { name: '秘塔写作猫', url: 'https://xiezuocat.com', desc: '中文 AI写作', icon: '🐱' },
+    ]
+  },
+  {
+    category: 'AI 软件',
+    items: [
+      { name: 'Python', url: 'https://www.python.org/', desc: 'Python 官方网站', icon: '🐍' },
     ]
   }
 ]
@@ -82,8 +88,8 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1>🚀 白开水AI</h1>
-        <p>发现最实用的AI工具，提升工作效率 - 专业AI导航平台</p>
+        <h1>🚀 白开水 AI</h1>
+        <p>发现最实用的 AI 工具，提升工作效率 - 专业 AI 导航平台</p>
       </header>
 
       <div className="search-section">
@@ -123,7 +129,7 @@ function App() {
             </div>
             <div className="modal-actions">
               <a
-                href="https://www.bilibili.com/video/BV1c1PizAEQB"
+                href="https://mp.weixin.qq.com/s/LHxPtrzTWpgq3NAVb6BFaw"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="modal-btn modal-btn-primary"
