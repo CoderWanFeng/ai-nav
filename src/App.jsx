@@ -190,8 +190,8 @@ function App() {
       {/* 直播预告悬浮按钮 */}
       {showLiveButton && (
         <button className="live-float-button" onClick={handleOpenModal}>
-          <span className="live-button-icon">🔴</span>
-          <span className="live-button-text">直播</span>
+          <span className="live-button-icon">🎁</span>
+          <span className="live-button-text">福利</span>
         </button>
       )}
 
