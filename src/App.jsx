@@ -129,7 +129,7 @@ function App() {
             </div>
             <div className="modal-actions">
               <a
-                href="https://mp.weixin.qq.com/s/LHxPtrzTWpgq3NAVb6BFaw"
+                href="https://www.python4office.cn/ads/ali/openclaw/260226-10%E5%88%86%E9%92%9F/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="modal-btn modal-btn-primary"
