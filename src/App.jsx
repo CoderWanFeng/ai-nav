@@ -49,6 +49,7 @@ const aiTools = [
     items: [
       { name: 'OpenClaw', url: 'https://www.python-office.com/openclaw/', desc: '开源AI爬虫工具', icon: '🦞' },
       { name: 'python-office', url: 'https://atomgit.com/CoderWanFeng1/python-office', desc: '自动化办公', icon: '📊' },
+      { name: 'popdf', url: 'https://atomgit.com/python4office/popdf', desc: 'PDF 智能处理', icon: '📄' },
     ]
   }
 ]
