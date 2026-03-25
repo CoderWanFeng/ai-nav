@@ -18,6 +18,7 @@ const aiTools = [
       { name: 'Stable Diffusion', url: 'https://stability.ai', desc: '开源AI绘画模型', icon: '🖼️' },
       { name: 'DALL·E 3', url: 'https://openai.com/dall-e-3', desc: 'OpenAI图像生成', icon: '🌟' },
       { name: '通义万相', url: 'https://tongyi.aliyun.com/wanxiang', desc: '阿里AI绘画', icon: '🎭' },
+      { name: 'AI海报', url: 'https://mp.weixin.qq.com/s/kEY96ikMsJoeD_w1Ssl8Ig', desc: '零基础AI海报课程', icon: '🖼️' },
     ]
   },
   {
@@ -27,6 +28,7 @@ const aiTools = [
       { name: 'Cursor', url: 'https://cursor.sh', desc: 'AI代码编辑器', icon: '✏️' },
       { name: 'CodeWhisperer', url: 'https://aws.amazon.com/codewhisperer', desc: 'AWS AI编程工具', icon: '🔧' },
       { name: '通义灵码', url: 'https://tongyi.aliyun.com/lingma', desc: '阿里AI编程助手', icon: '⚡' },
+      { name: '斯坦福AI', url: 'https://mp.weixin.qq.com/s/W4jXhXKPs1O8I-7GpFSODQ', desc: '斯坦福AI编程课程', icon: '🎓' },
     ]
   },
   {
@@ -43,6 +45,7 @@ const aiTools = [
     items: [
       { name: 'Python', url: 'https://www.python.org/', desc: 'Python 官方网站', icon: '🐍' },
       { name: 'WorkBuddy', url: 'https://www.codebuddy.cn/promotion/?ref=jnlybo7jhjpcv21b', desc: 'AI Agent 办公新范式', icon: '🤖' },
+      { name: '养龙虾', url: 'https://mp.weixin.qq.com/s/aNwU5J_xODm15sHPZmDu1w', desc: 'OpenClaw实战教程', icon: '🦞' },
     ]
   },
   {
