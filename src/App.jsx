@@ -45,7 +45,7 @@ const aiTools = [
     items: [
       { name: 'Python', url: 'https://www.python.org/', desc: 'Python 官方网站', icon: '🐍' },
       { name: 'WorkBuddy', url: 'https://www.codebuddy.cn/work', desc: 'AI Agent 办公新范式', icon: '🤖' },
-      { name: '养龙虾', url: 'https://mp.weixin.qq.com/s/aNwU5J_xODm15sHPZmDu1w', desc: 'OpenClaw实战教程', icon: '🦞' },
+      { name: '养龙虾', url: 'https://www.python-office.com/openclaw/', desc: 'OpenClaw实战教程', icon: '🦞' },
     ]
   },
   {
