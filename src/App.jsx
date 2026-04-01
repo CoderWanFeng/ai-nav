@@ -44,7 +44,7 @@ const aiTools = [
     category: 'AI 软件',
     items: [
       { name: 'Python', url: 'https://www.python.org/', desc: 'Python 官方网站', icon: '🐍' },
-      { name: 'WorkBuddy', url: 'https://www.codebuddy.cn/work', desc: 'AI Agent 办公新范式', icon: '🤖' },
+      { name: 'WorkBuddy', url: 'https://www.codebuddy.cn/fission/?inviteCode=i1q83e03n', desc: 'AI Agent 办公新范式', icon: '🤖' },
       { name: '养龙虾', url: 'https://www.python-office.com/openclaw/', desc: 'OpenClaw实战教程', icon: '🦞' },
     ]
   },
