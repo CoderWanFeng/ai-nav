@@ -1,5 +1,7 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './App.css'
+import aipptLogo from './assets/aippt-logo.png'
 
 const aiTools = [
   {
@@ -9,6 +11,16 @@ const aiTools = [
       { name: 'Claude', url: 'https://claude.ai', desc: 'Anthropic的AI助手', icon: '🧠' },
       { name: 'Gemini', url: 'https://gemini.google.com', desc: 'Google的AI对话模型', icon: '💎' },
       { name: '文心一言', url: 'https://yiyan.baidu.com', desc: '百度AI对话产品', icon: '📖' },
+    ]
+  },
+  {
+    category: 'AI办公',
+    items: [
+      { name: 'AIPPT', url: 'https://www.aippt.cn/?utm_type=Navweb&utm_source=bks&utm_page=aippt&utm_plan=aippt&utm_unit=AIPPT&utm_keyword=40517106', desc: 'AI PPT 演示文稿生成', icon: '📊' },
+      { name: 'Notion AI', url: 'https://www.notion.so/product/ai', desc: '智能写作助手', icon: '📝' },
+      { name: 'Jasper', url: 'https://www.jasper.ai', desc: 'AI 营销文案', icon: '📢' },
+      { name: 'Copy.ai', url: 'https://www.copy.ai', desc: 'AI 文案生成', icon: '📋' },
+      { name: '秘塔写作猫', url: 'https://xiezuocat.com', desc: '中文 AI写作', icon: '🐱' },
     ]
   },
   {
@@ -27,17 +39,8 @@ const aiTools = [
       { name: 'GitHub Copilot', url: 'https://github.com/copilot', desc: 'AI编程助手', icon: '💻' },
       { name: 'Cursor', url: 'https://cursor.sh', desc: 'AI代码编辑器', icon: '✏️' },
       { name: 'CodeWhisperer', url: 'https://aws.amazon.com/codewhisperer', desc: 'AWS AI编程工具', icon: '🔧' },
-      { name: '通义灵码', url: 'https://tongyi.aliyun.com/lingma', desc: '阿里AI编程助手', icon: '⚡' },
+      { name: '通义灵码', url: 'https://t.aliyun.com/U/Lvt9Sr', desc: '阿里AI编程助手', icon: '⚡' },
       { name: '斯坦福AI', url: 'https://mp.weixin.qq.com/s/W4jXhXKPs1O8I-7GpFSODQ', desc: '斯坦福AI编程课程', icon: '🎓' },
-    ]
-  },
-  {
-    category: 'AI写作',
-    items: [
-      { name: 'Notion AI', url: 'https://www.notion.so/product/ai', desc: '智能写作助手', icon: '📝' },
-      { name: 'Jasper', url: 'https://www.jasper.ai', desc: 'AI 营销文案', icon: '📢' },
-      { name: 'Copy.ai', url: 'https://www.copy.ai', desc: 'AI 文案生成', icon: '📋' },
-      { name: '秘塔写作猫', url: 'https://xiezuocat.com', desc: '中文 AI写作', icon: '🐱' },
     ]
   },
   {
@@ -100,8 +103,13 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1>🚀 白开水 AI</h1>
-        <p>发现最实用的 AI 工具，提升工作效率 - 专业 AI 导航平台</p>
+        <h1>🚀 白开水AI</h1>
+        <p>发现最实用的AI工具，提升工作效率 - 专业AI导航平台</p>
+        <nav className="header-nav">
+          <Link to="/">AI工具导航</Link>
+          <Link to="/faq">常见问题</Link>
+          <Link to="/about">关于我们</Link>
+        </nav>
       </header>
 
       <div className="search-section">
@@ -167,7 +175,7 @@ function App() {
                     rel="noopener noreferrer"
                     className="tool-card"
                   >
-                    <div className="tool-icon">{tool.icon}</div>
+                    <div className="tool-icon">{tool.name === 'AIPPT' ? <img src={aipptLogo} alt="AIPPT" className="tool-icon-img" /> : tool.icon}</div>
                     <div className="tool-info">
                       <h3 className="tool-name">{tool.name}</h3>
                       <p className="tool-desc">{tool.desc}</p>
@@ -187,7 +195,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="tool-card"
               >
-                <div className="tool-icon">{tool.icon}</div>
+                <div className="tool-icon">{tool.name === 'AIPPT' ? <img src={aipptLogo} alt="AIPPT" className="tool-icon-img" /> : tool.icon}</div>
                 <div className="tool-info">
                   <h3 className="tool-name">{tool.name}</h3>
                   <p className="tool-category">{tool.category}</p>
@@ -228,7 +236,9 @@ function App() {
 
       <footer className="footer">
         <p>© 2026 AI工具导航 | 让AI成为你的得力助手</p>
-        <p>
+        <p className="footer-links">
+          <Link to="/about">关于我们</Link>
+          <Link to="/faq">常见问题</Link>
           <a
             href="https://beian.miit.gov.cn/"
             target="_blank"
