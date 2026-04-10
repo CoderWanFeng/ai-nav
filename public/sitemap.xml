@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <!-- 首页 -->
   <url>
@@ -28,37 +25,63 @@
     <priority>0.8</priority>
   </url>
   
-  <!-- 分类页面 (通过Vue Router或静态生成) -->
+  <!-- AI对话分类 -->
   <url>
     <loc>https://python4office.cn/category/ai-duihua/</loc>
     <lastmod>2026-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <!-- AI办公分类 -->
   <url>
     <loc>https://python4office.cn/category/ai-bangong/</loc>
     <lastmod>2026-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <!-- AI绘画分类 -->
   <url>
     <loc>https://python4office.cn/category/ai-huihua/</loc>
     <lastmod>2026-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <!-- AI编程分类 -->
   <url>
     <loc>https://python4office.cn/category/ai-biancheng/</loc>
     <lastmod>2026-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <!-- AI视频分类 -->
   <url>
-    <loc>https://python4office.cn/category/ai-ruanjian/</loc>
+    <loc>https://python4office.cn/category/ai-shipin/</loc>
     <lastmod>2026-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <!-- AI搜索分类 -->
+  <url>
+    <loc>https://python4office.cn/category/ai-sousuo/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- AI音频分类 -->
+  <url>
+    <loc>https://python4office.cn/category/ai-yinpin/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- AI项目分类 -->
   <url>
     <loc>https://python4office.cn/category/ai-xiangmu/</loc>
     <lastmod>2026-04-10</lastmod>
