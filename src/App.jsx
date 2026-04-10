@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './App.css'
-import aipptLogo from './assets/aippt-logo.png'
+import aipptLogo from './assets/ai-办公/aippt-logo.png'
 
 const aiTools = [
   {
@@ -16,7 +16,7 @@ const aiTools = [
   {
     category: 'AI办公',
     items: [
-      { name: 'AIPPT', url: 'https://www.aippt.cn/?utm_type=Navweb&utm_source=bks&utm_page=aippt&utm_plan=aippt&utm_unit=AIPPT&utm_keyword=40517106', desc: 'AI PPT 演示文稿生成', icon: '📊' },
+      { name: 'AI免费生成PPT', url: 'https://www.aippt.cn/?utm_type=Navweb&utm_source=bks&utm_page=aippt&utm_plan=aippt&utm_unit=AIPPT&utm_keyword=40517106', desc: '一句话，一分钟，一键生成PPT', icon: '/src/assets/ai-办公/aippt-logo.png' },
       { name: 'Notion AI', url: 'https://www.notion.so/product/ai', desc: '智能写作助手', icon: '📝' },
       { name: 'Jasper', url: 'https://www.jasper.ai', desc: 'AI 营销文案', icon: '📢' },
       { name: 'Copy.ai', url: 'https://www.copy.ai', desc: 'AI 文案生成', icon: '📋' },
@@ -175,7 +175,13 @@ function App() {
                     rel="noopener noreferrer"
                     className="tool-card"
                   >
-                    <div className="tool-icon">{tool.name === 'AIPPT' ? <img src={aipptLogo} alt="AIPPT" className="tool-icon-img" /> : tool.icon}</div>
+                    <div className="tool-icon">
+                      {tool.icon.startsWith('/') ? (
+                        <img src={tool.icon} alt={tool.name} className="tool-icon-img" />
+                      ) : (
+                        tool.icon
+                      )}
+                    </div>
                     <div className="tool-info">
                       <h3 className="tool-name">{tool.name}</h3>
                       <p className="tool-desc">{tool.desc}</p>
@@ -195,7 +201,13 @@ function App() {
                 rel="noopener noreferrer"
                 className="tool-card"
               >
-                <div className="tool-icon">{tool.name === 'AIPPT' ? <img src={aipptLogo} alt="AIPPT" className="tool-icon-img" /> : tool.icon}</div>
+                <div className="tool-icon">
+                      {tool.icon.startsWith('/') ? (
+                        <img src={tool.icon} alt={tool.name} className="tool-icon-img" />
+                      ) : (
+                        tool.icon
+                      )}
+                    </div>
                 <div className="tool-info">
                   <h3 className="tool-name">{tool.name}</h3>
                   <p className="tool-category">{tool.category}</p>
