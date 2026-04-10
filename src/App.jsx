@@ -16,7 +16,7 @@ const aiTools = [
   {
     category: 'AI办公',
     items: [
-      { name: 'AI免费生成PPT', url: 'https://www.aippt.cn/?utm_type=Navweb&utm_source=bks&utm_page=aippt&utm_plan=aippt&utm_unit=AIPPT&utm_keyword=40517106', desc: '一句话，一分钟，一键生成PPT', icon: '/src/assets/ai-办公/aippt-logo.png' },
+      { name: 'AI免费生成PPT', url: 'https://www.aippt.cn/?utm_type=Navweb&utm_source=bks&utm_page=aippt&utm_plan=aippt&utm_unit=AIPPT&utm_keyword=40517106', desc: '一句话，一分钟，一键生成PPT', icon: '/assets/ai-办公/aippt-logo.png' },
       { name: 'Notion AI', url: 'https://www.notion.so/product/ai', desc: '智能写作助手', icon: '📝' },
       { name: 'Jasper', url: 'https://www.jasper.ai', desc: 'AI 营销文案', icon: '📢' },
       { name: 'Copy.ai', url: 'https://www.copy.ai', desc: 'AI 文案生成', icon: '📋' },
