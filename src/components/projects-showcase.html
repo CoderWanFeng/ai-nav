@@ -1,0 +1,301 @@
+<!-- 
+  跨站项目展示组件 - 通用 HTML/CSS 版本
+  
+  用于 md2mp、lm-vlog 等静态网站
+  
+  使用方式：
+  1. 在页面底部 </body> 前引入此代码
+  2. 调整 exclude 参数来排除当前项目
+  3. 可以自定义样式以匹配你的网站主题
+-->
+<style>
+/* 项目展示组件样式 */
+.projects-showcase {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.projects-showcase h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+  transform: translateY(-2px);
+}
+
+.project-card .icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.project-card .content {
+  flex: 1;
+  min-width: 0;
+}
+
+.project-card .name {
+  font-weight: 600;
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-card:hover .name {
+  color: #2563eb;
+}
+
+.project-card .tagline {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0.25rem 0;
+}
+
+.project-card .description {
+  font-size: 0.875rem;
+  color: #475569;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.project-card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-top: 0.5rem;
+}
+
+.project-card .tag {
+  padding: 0.125rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 9999px;
+  background: #eff6ff;
+  color: #2563eb;
+  border: 1px solid #dbeafe;
+}
+
+.project-card .badge {
+  padding: 0.125rem 0.375rem;
+  font-size: 0.625rem;
+  border-radius: 4px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-weight: 500;
+}
+
+.project-card .external-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #94a3b8;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.project-card:hover .external-icon {
+  color: #3b82f6;
+}
+
+.projects-footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.projects-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.projects-footer a:hover {
+  color: #1d4ed8;
+}
+</style>
+
+<div id="projects-showcase-container"></div>
+
+<script>
+// 项目数据（与 React/Vue 版本保持同步）
+const PROJECTS_DATA = [
+  {
+    slug: 'python4office',
+    name: '程序员晚枫',
+    tagline: '技术博客 · AI编程 · 副业变现',
+    description: '程序员晚枫的个人技术博客，分享Python、AI编程、副业变现和数字游民生活。',
+    url: 'https://python4office.cn',
+    icon: '👨‍💻',
+    category: 'blog',
+    isPrimary: true,
+    tags: ['Python', 'AI编程', '副业', '数字游民'],
+  },
+  {
+    slug: 'ai-nav',
+    name: '白开水AI导航',
+    tagline: '发现最实用的AI工具',
+    description: '汇集全网优质AI工具，按功能分类，支持搜索和收藏。',
+    url: 'https://nav.python4office.cn',
+    icon: '🧭',
+    category: 'ai',
+    tags: ['AI工具', '导航', 'ChatGPT'],
+  },
+  {
+    slug: 'python-office',
+    name: 'python-office',
+    tagline: 'Python自动化办公神器',
+    description: '一个功能强大的Python自动化办公库。',
+    url: 'https://www.python-office.com',
+    github: 'https://github.com/CoderWanFeng/python-office',
+    icon: '🐍',
+    category: 'tools',
+    tags: ['Python', '自动化办公', 'Excel'],
+  },
+  {
+    slug: 'openclaw',
+    name: 'OpenClaw',
+    tagline: '下一代AI助手平台',
+    description: '基于先进AI技术的智能助手平台，支持多场景应用。',
+    url: 'https://openclaw.python4office.cn',
+    icon: '🦞',
+    category: 'ai',
+    tags: ['AI助手', 'GPT', '开发者'],
+  },
+  {
+    slug: 'digital-nomad',
+    name: '数字游民签证大全',
+    tagline: '全球数字游民签证政策汇总',
+    description: '整理全球数字游民签证政策、申请条件和攻略。',
+    url: 'https://digital.python4office.cn',
+    icon: '🌍',
+    category: 'lifestyle',
+    tags: ['数字游民', '签证', '远程工作'],
+  },
+  {
+    slug: 'how-to-opc',
+    name: '个人网站搭建指南',
+    tagline: '从零开始建站的完整教程',
+    description: '分享程序员晚枫搭建各个网站的实战经验。',
+    url: 'https://opc.python4office.cn',
+    icon: '🏗️',
+    category: 'tutorial',
+    tags: ['建站', '前端', '部署'],
+  },
+  {
+    slug: 'md2mp',
+    name: 'md2mp',
+    tagline: '微信公众号Markdown编辑器',
+    description: '支持Markdown语法，自动转换为公众号格式。',
+    url: 'https://md.python4office.cn',
+    icon: '📝',
+    category: 'tools',
+    tags: ['微信公众号', 'Markdown', '排版'],
+  },
+  {
+    slug: 'lm-vlog',
+    name: '晚枫和小明',
+    tagline: '程序员夫妻的日常',
+    description: '记录程序员晚枫和小明的Vlog和技术分享。',
+    url: 'https://lm.python4office.cn',
+    icon: '🎬',
+    category: 'lifestyle',
+    tags: ['Vlog', '程序员', 'B站'],
+  },
+];
+
+// 配置：排除当前项目
+const CONFIG = {
+  exclude: '', // 例如: 'ai-nav', 'openclaw' 等，留空则显示全部
+  title: '👨‍💻 作者的其他项目',
+  maxCount: 0, // 0 表示不限制
+};
+
+// 渲染项目卡片
+function renderProjectsShowcase() {
+  const container = document.getElementById('projects-showcase-container');
+  if (!container) return;
+
+  // 过滤项目
+  let projects = PROJECTS_DATA.filter(p => !p.isPrimary);
+  
+  if (CONFIG.exclude) {
+    projects = projects.filter(p => p.slug !== CONFIG.exclude);
+  }
+  
+  if (CONFIG.maxCount > 0) {
+    projects = projects.slice(0, CONFIG.maxCount);
+  }
+
+  // 生成 HTML
+  const cardsHtml = projects.map(project => `
+    <a href="${project.url}" class="project-card" target="_blank" rel="noopener noreferrer">
+      <span class="icon">${project.icon}</span>
+      <div class="content">
+        <div class="name">
+          ${project.name}
+          ${project.isPrimary ? '<span class="badge">主站</span>' : ''}
+        </div>
+        <div class="tagline">${project.tagline}</div>
+        <div class="description">${project.description}</div>
+        <div class="tags">
+          ${project.tags.slice(0, 3).map(tag => `<span class="tag">${tag}</span>`).join('')}
+        </div>
+      </div>
+      <svg class="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+      </svg>
+    </a>
+  `).join('');
+
+  container.innerHTML = `
+    <div class="projects-showcase">
+      <h3>${CONFIG.title}</h3>
+      <div class="projects-grid">
+        ${cardsHtml}
+      </div>
+      <div class="projects-footer">
+        <a href="https://python4office.cn" target="_blank" rel="noopener noreferrer">
+          访问程序员晚枫主站
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  `;
+}
+
+// 页面加载完成后渲染
+document.addEventListener('DOMContentLoaded', renderProjectsShowcase);
+</script>

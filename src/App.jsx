@@ -312,7 +312,7 @@ function App() {
       </section>
 
       <footer className="footer">
-        <p>© 2026 AI工具导航 | 让AI成为你的得力助手</p>
+        <p>© 2026 白开水AI导航 | 让AI成为你的得力助手</p>
         <p className="footer-links">
           <Link to="/about">关于我们</Link>
           <Link to="/faq">常见问题</Link>
@@ -325,6 +325,14 @@ function App() {
             鲁ICP备2021040536号-2
           </a>
         </p>
+        {/* 跨站项目导流 */}
+        <div className="cross-site-links">
+          <a href="https://python4office.cn" target="_blank" rel="noopener noreferrer">技术博客</a>
+          <a href="https://www.python-office.com" target="_blank" rel="noopener noreferrer">python-office</a>
+          <a href="https://openclaw.python4office.cn" target="_blank" rel="noopener noreferrer">OpenClaw</a>
+          <a href="https://digital.python4office.cn" target="_blank" rel="noopener noreferrer">数字游民</a>
+          <a href="https://opc.python4office.cn" target="_blank" rel="noopener noreferrer">建站教程</a>
+        </div>
       </footer>
     </div>
   )

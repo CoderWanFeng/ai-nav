@@ -572,3 +572,34 @@ body {
     font-size: 0.85rem;
   }
 }
+
+/* 跨站项目导流 */
+.cross-site-links {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.cross-site-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.cross-site-links a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 5px 12px;
+  margin: 3px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  font-size: 0.85rem;
+  transition: all 0.3s;
+}
+
+.cross-site-links a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
