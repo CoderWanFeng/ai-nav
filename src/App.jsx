@@ -329,9 +329,9 @@ function App() {
         <div className="cross-site-links">
           <a href="https://python4office.cn" target="_blank" rel="noopener noreferrer">技术博客</a>
           <a href="https://www.python-office.com" target="_blank" rel="noopener noreferrer">python-office</a>
-          <a href="https://openclaw.python4office.cn" target="_blank" rel="noopener noreferrer">OpenClaw</a>
-          <a href="https://digital.python4office.cn" target="_blank" rel="noopener noreferrer">数字游民</a>
-          <a href="https://opc.python4office.cn" target="_blank" rel="noopener noreferrer">建站教程</a>
+          <a href="https://www.python-office.com/openclaw" target="_blank" rel="noopener noreferrer">OpenClaw</a>
+          <a href="https://www.python-office.com/how-to-digital-nomad" target="_blank" rel="noopener noreferrer">数字游民</a>
+          <a href="https://www.python-office.com/opc" target="_blank" rel="noopener noreferrer">建站教程</a>
         </div>
       </footer>
     </div>
