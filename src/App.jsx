@@ -24,7 +24,7 @@ const aiTools = [
   {
     category: 'AI办公',
     items: [
-      { name: 'AI免费生成PPT', url: 'https://www.aippt.cn', desc: '一句话，一分钟，一键生成PPT', icon: aipptLogo },
+      { name: 'AI免费生成PPT', url: 'https://www.aippt.cn/?utm_type=Navweb&utm_source=bks&utm_page=aippt&utm_plan=aippt&utm_unit=AIPPT&utm_keyword=40517106', desc: '一句话，一分钟，一键生成PPT', icon: aipptLogo },
       { name: 'WPS AI', url: 'https://ai.wps.cn', desc: '金山办公AI助手', icon: '📄' },
       { name: '腾讯文档AI', url: 'https://docs.qq.com', desc: '在线文档AI助手', icon: '📝' },
       { name: '飞书AI', url: 'https://www.feishu.cn', desc: '字节跳动办公AI', icon: '🚀' },
