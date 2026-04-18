@@ -797,9 +797,9 @@ function App() {
             <section key={category.category} className="category-section">
               <h2 className="category-title">{category.category}</h2>
               <div className="tools-grid">
-                {category.items.map(tool => (
+                {category.items.map((tool, idx) => (
                   <a
-                    key={tool.name}
+                    key={`${tool.name}-${idx}`}
                     href={tool.url}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -823,9 +823,9 @@ function App() {
           ))
         ) : (
           <div className="tools-grid">
-            {filteredTools.map(tool => (
+            {filteredTools.map((tool, index) => (
               <a
-                key={tool.name}
+                key={`${tool.name}-${index}`}
                 href={tool.url}
                 target="_blank"
                 rel="noopener noreferrer"
