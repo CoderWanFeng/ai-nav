@@ -656,6 +656,12 @@ function App() {
 
   const categories = ['全部', ...aiTools.map(t => t.category)]
 
+  // 切换分类并滚动到内容区
+  const handleCategoryChange = (cat) => {
+    setActiveCategory(cat)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   // 关闭弹窗
   const handleCloseModal = () => {
     setShowLiveModal(false)
@@ -706,7 +712,7 @@ function App() {
                   <button
                     className={`nav-item ${activeCategory === cat ? 'active' : ''}`}
                     onClick={() => {
-                      setActiveCategory(cat)
+                      handleCategoryChange(cat)
                       setSidebarOpen(false)
                     }}
                   >
@@ -757,7 +763,7 @@ function App() {
           <button
             key={cat}
             className={`category-tab ${activeCategory === cat ? 'active' : ''}`}
-            onClick={() => setActiveCategory(cat)}
+            onClick={() => handleCategoryChange(cat)}
           >
             {cat}
           </button>
@@ -848,15 +854,6 @@ function App() {
           </div>
         )}
       </main>
-      </div>
-
-      {/* 直播预告悬浮按钮 */}
-      {showLiveButton && (
-        <button className="live-float-button" onClick={handleOpenModal}>
-          <span className="live-button-icon">🔴</span>
-          <span className="live-button-text">直播</span>
-        </button>
-      )}
 
       <section className="about-section">
           <div className="about-content">
@@ -900,6 +897,15 @@ function App() {
           <a href="https://www.python-office.com/opc" target="_blank" rel="noopener noreferrer">建站教程</a>
         </div>
       </footer>
+      </div>
+
+      {/* 直播预告悬浮按钮 */}
+      {showLiveButton && (
+        <button className="live-float-button" onClick={handleOpenModal}>
+          <span className="live-button-icon">🔴</span>
+          <span className="live-button-text">直播</span>
+        </button>
+      )}
     </div>
   )
 }
