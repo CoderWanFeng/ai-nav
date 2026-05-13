@@ -36,11 +36,13 @@ const aiTools = [
       { name: 'Copy.ai', url: 'https://www.copy.ai', desc: 'AI营销文案生成', icon: '📢' },
       { name: 'Jasper', url: 'https://www.jasper.ai', desc: '企业级AI内容创作', icon: '💼' },
       { name: 'QuillBot', url: 'https://quillbot.com', desc: 'AI写作润色改写', icon: '✏️' },
+      { name: '沁言学术', url: 'https://app.qinyanai.com/?sourceCode=JYT7AI41', desc: 'AI论文辅助工具', icon: '📚' },
     ]
   },
   {
     category: 'AI绘画',
     items: [
+      { name: 'LibTV', url: 'https://www.liblib.tv/?sourceid=005902&utm=cg&cgv=9omkl4jn4d', desc: 'AI绘画社区 模型分享', icon: '🌈' },
       { name: 'Midjourney', url: 'https://www.midjourney.com', desc: '顶级AI绘画工具', icon: '🎨' },
       { name: 'Stable Diffusion', url: 'https://stability.ai', desc: '开源AI绘画模型', icon: '🖼️' },
       { name: 'DALL·E 3', url: 'https://openai.com/dall-e-3', desc: 'OpenAI图像生成', icon: '🌟' },
@@ -85,6 +87,7 @@ const aiTools = [
       { name: '万兴播爆', url: 'https://virbo.wondershare.cn', desc: 'AI数字人视频', icon: '🎙️' },
       { name: 'Fliki', url: 'https://fliki.ai', desc: 'AI文本转视频', icon: '🎞️' },
       { name: 'Opus Clip', url: 'https://opus.pro', desc: 'AI长视频转短视频', icon: '📺' },
+      { name: '讯飞智作', url: 'https://www.xfzhizuo.cn/?utm=cg&cgv=l41ev8dkv8', desc: 'AI数字人视频生成', icon: '🎙️' },
     ]
   },
   {
