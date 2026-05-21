@@ -36,7 +36,12 @@ const aiTools = [
       { name: 'Copy.ai', url: 'https://www.copy.ai', desc: 'AI营销文案生成', icon: '📢' },
       { name: 'Jasper', url: 'https://www.jasper.ai', desc: '企业级AI内容创作', icon: '💼' },
       { name: 'QuillBot', url: 'https://quillbot.com', desc: 'AI写作润色改写', icon: '✏️' },
-      { name: '沁言学术', url: 'https://app.qinyanai.com/?sourceCode=JYT7AI41', desc: 'AI论文辅助工具', icon: '📚' },
+      { name: '沁言学术', url: 'https://app.qinyanai.com/?utm=cg&cgv=3mnz8w7no1', desc: 'AI学术全流程工具，覆盖查读写闭环', icon: '📚' },
+      { name: '墨刀AI', url: 'https://modao.cc/feature/ai?utm_channel=wl&utm_source=referrals&utm_keyword=cakegrowth&utm=cg&cgv=5ln1qj3erw', desc: '极速生成PRD文档、原型图、PPT、图表的智能平台', icon: '✏️', tag: 'CPS 25%' },
+      { name: '超级简历WonderCV', url: 'https://www.wondercv.com/?utm=cg&cgv=zdkjoy9e1r', desc: '面向应届生和AI小白的智能求职平台', icon: '📄', tag: 'CPS 40%' },
+      { name: 'UP简历', url: 'https://upcv.tech/?utm=cg&cgv=9we2rzwkgo', desc: 'AI帮助用户找工作的求职平台，覆盖求职全流程', icon: '📋', tag: 'CPS 40%' },
+      { name: 'iSlide PPT', url: 'https://www.islide.cc/landing?utm=cg&cgv=rpexy6vk90', desc: 'AI一键生成PPT，内置9大资源库', icon: '🎨', tag: 'CPS 50%' },
+      { name: 'SpeedAI', url: 'https://speedai.com/?utm=cg&cgv=3mnz8wjno1', desc: 'AIGC检测、降重降AI平台', icon: '⚡', tag: 'CPS 25%' },
     ]
   },
   {
@@ -55,6 +60,8 @@ const aiTools = [
       { name: '吐司AI', url: 'https://tusi.art', desc: 'AI模型分享社区', icon: '🎨' },
       { name: 'Adobe Firefly', url: 'https://firefly.adobe.com', desc: 'Adobe生成式AI', icon: '🔥' },
       { name: 'Canva AI', url: 'https://www.canva.com', desc: '在线设计AI助手', icon: '🖌️' },
+      { name: '星流', url: 'https://www.xingliu.art/?souceid=005903&utm=cg&cgv=1zn5oxmeqm', desc: '面向创作者、设计师的一站式国产AI视觉创作平台', icon: '🌟', tag: 'CPA ¥5' },
+      { name: 'LiblibAI', url: 'https://www.liblib.art/?souceid=005904&utm=cg&cgv=2znrw0okr7', desc: '一站式多模态AI创作平台，覆盖图片、视频生成', icon: '🌈', tag: 'CPA ¥5' },
     ]
   },
   {
@@ -88,6 +95,8 @@ const aiTools = [
       { name: 'Fliki', url: 'https://fliki.ai', desc: 'AI文本转视频', icon: '🎞️' },
       { name: 'Opus Clip', url: 'https://opus.pro', desc: 'AI长视频转短视频', icon: '📺' },
       { name: '讯飞智作', url: 'https://www.xfzhizuo.cn/?utm=cg&cgv=l41ev8dkv8', desc: 'AI数字人视频生成', icon: '🎙️' },
+      { name: '白日梦', url: 'https://aibrm.com/?utm=cg&cgv=59ng4gjnr2', desc: 'AI视频创作类AIGC创作平台', icon: '💭', tag: 'CPS 30%' },
+      { name: 'JoyPix AI', url: 'https://www.joypix.ai/app/login/?utm=cg&cgv=4ony58oejx', desc: '一站式AI视频平台', icon: '🖼️', tag: 'CPS 20%' },
     ]
   },
   {
@@ -112,6 +121,7 @@ const aiTools = [
       { name: '标小智', url: 'https://biaoti.com', desc: 'AI logo生成', icon: '🏷️' },
       { name: 'Uberduck', url: 'https://uberduck.ai', desc: 'AI语音合成', icon: '🦆' },
       { name: 'Murf AI', url: 'https://murf.ai', desc: 'AI语音生成', icon: '🗣️' },
+      { name: '音述AI', url: 'https://www.yinshu.me/?ad_channel=cakegrowth&utm=cg&cgv=qmno24zk29', desc: 'AI音乐创作与声音分享社区', icon: '🎵', tag: 'CPS 15%' },
     ]
   },
   {
@@ -125,6 +135,11 @@ const aiTools = [
       { name: 'Ollama', url: 'https://ollama.com', desc: '本地运行LLM', icon: '🦙' },
       { name: 'AnythingLLM', url: 'https://anythingllm.com', desc: '本地AI知识库', icon: '📚' },
       { name: 'FastGPT', url: 'https://fastgpt.cn', desc: 'AI知识库问答', icon: '⚡' },
+      { name: 'AstronClaw', url: 'https://agent.xfyun.cn/astron-claw?utm=cg&cgv=3rpe395e05', desc: '讯飞旗下的一键云端部署AI智能体平台', icon: '🦞', tag: 'CPA ¥30' },
+      { name: '爱派AiPy', url: 'https://www.aipyaipy.com/?referral=BJ5OOSP&utm=cg&cgv=59ng4ggnr2', desc: '融合LLM与Python能力的AI智能体', icon: '🐍', tag: 'CPA ¥5' },
+      { name: '码上飞', url: 'https://www.codeflying.net/?utm=cg&cgv=20epp94ew1', desc: '一站式AI应用开发智能体，可生成小程序、APP、网站', icon: '🚀', tag: 'CPA+CPS' },
+      { name: '01Agent', url: 'https://01agent.net/?utm=cg&cgv=rpexy6zk90', desc: '全流程内容创作智能体，专为国内主流平台优化', icon: '🤖', tag: 'CPS 35%' },
+      { name: '火山引擎', url: 'https://www.volcengine.com/activity/agentplan?utm_campaign=CG&utm_content=CG&utm_medium=CakeGrowth&utm_source=OWO&utm_term=CG&utm=cg&cgv=omklvl7n4d', desc: '字节跳动旗下企业级云与AI服务平台', icon: '🔥', tag: 'CPA ¥4' },
     ]
   }
 ]
