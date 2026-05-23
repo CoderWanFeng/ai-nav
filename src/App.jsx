@@ -139,7 +139,7 @@ const aiTools = [
       { name: '爱派AiPy', url: 'https://www.aipyaipy.com/?referral=BJ5OOSP&utm=cg&cgv=59ng4ggnr2', desc: '融合LLM与Python能力的AI智能体', icon: '🐍', tag: 'CPA ¥5' },
       { name: '码上飞', url: 'https://www.codeflying.net/?utm=cg&cgv=20epp94ew1', desc: '一站式AI应用开发智能体，可生成小程序、APP、网站', icon: '🚀', tag: 'CPA+CPS' },
       { name: '01Agent', url: 'https://01agent.net/?utm=cg&cgv=rpexy6zk90', desc: '全流程内容创作智能体，专为国内主流平台优化', icon: '🤖', tag: 'CPS 35%' },
-      { name: '火山引擎', url: 'https://www.volcengine.com/activity/agentplan?utm_campaign=CG&utm_content=CG&utm_medium=CakeGrowth&utm_source=OWO&utm_term=CG&utm=cg&cgv=omklvl7n4d', desc: '字节跳动旗下企业级云与AI服务平台', icon: '🔥', tag: 'CPA ¥4' },
+      { name: '火山引擎', url: 'https://volcengine.com/L/hZRFoiCAVDE/', desc: '字节跳动旗下企业级云与AI服务平台', icon: '🔥', tag: 'CPA ¥4' },
     ]
   }
 ]
