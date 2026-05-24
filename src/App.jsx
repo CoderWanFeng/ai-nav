@@ -225,14 +225,14 @@ function App() {
             <h2 className="modal-title">🎁 福利教程</h2>
             <div className="modal-live-info">
               <div className="modal-live-item">
-                <div className="modal-live-time">⏰ 本月更新！</div>
-                <h3 className="modal-live-topic">OpenClaw入门教程 + 实战案例库</h3>
-                <p className="modal-live-desc">有手就行，一起养虾</p>
+                <div className="modal-live-time">⏰ 求职福利！</div>
+                <h3 className="modal-live-topic">邀你一起使用WonderCV！专业简历，轻松求职，WonderCV 助你斩获offer</h3>
+                <p className="modal-live-desc">AI简历 让求职更高效</p>
               </div>
             </div>
             <div className="modal-actions">
               <a
-                href="https://www.python-office.com/openclaw/"
+                href="https://www.wondercv.com/?utm=cg&cgv=zdkjoy9e1r"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="modal-btn modal-btn-primary"
