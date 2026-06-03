@@ -134,6 +134,11 @@ const aiTools = [
       { name: '百度如流', url: 'https://ruli-liuhe.baidu.com', desc: '百度智能办公', icon: '🌊' },
       { name: 'WeLink AI', url: 'https://www.welink.huaweicloud.com', desc: '华为WeLink AI', icon: '🐚' },
       { name: 'ChatSpace', url: 'https://www.chatspace.cn', desc: '企业文档AI', icon: '🚀' },
+      { name: '墨刀AI', url: 'https://modao.cc/feature/ai?utm_channel=wl&utm_source=referrals&utm_keyword=cakegrowth&utm=cg&cgv=5ln1qj3erw', desc: '极速生成PRD文档、原型图、PPT、图表的智能平台', icon: '✏️' },
+      { name: '超级简历WonderCV', url: 'https://www.wondercv.com/?utm=cg&cgv=zdkjoy9e1r', desc: '面向应届生和AI小白的智能求职平台', icon: '📄' },
+      { name: 'UP简历', url: 'https://upcv.tech/?utm=cg&cgv=9we2rzwkgo', desc: 'AI帮助用户找工作的求职平台，覆盖求职全流程', icon: '📋' },
+      { name: 'AiPPT插件', url: 'https://www.aippt.cn/plugin?utm_type=CJDHZ&utm_source=cakegrowth&utm_page=home&utm_plan=dhzfx&utm_unit=c1&utm_keyword=40515276&utm=cg&cgv=20epp9dew1', desc: '内嵌于Office和WPS的智能化PPT创作工具', icon: '📊' },
+      { name: 'iSlide PPT', url: 'https://www.islide.cc/landing?utm=cg&cgv=rpexy6vk90', desc: 'AI一键生成PPT，内置9大资源库', icon: '🎨' },
     ]
   },
   {
@@ -191,10 +196,15 @@ const aiTools = [
       { name: '灵动AI', url: 'https://www.dongmai.art', desc: 'AI图片生成', icon: '⚡' },
       { name: 'AI改图神器', url: 'https://img.logosc.cn', desc: 'AI图片处理工具箱', icon: '🛠️' },
       { name: '吐司AI生图', url: 'https://tusiart.com', desc: '国产AI绘画', icon: '🍞' },
-      { name: 'LiblibAI在线', url: 'https://www.liblibalib.cn', desc: '在线AI绘画', icon: '📚' },
+      { name: 'LiblibAI在线', url: 'https://www.liblib.art/?souceid=005904&utm=cg&cgv=2znrw0okr7', desc: '一站式多模态AI创作平台，覆盖图片、视频生成', icon: '🌈' },
       { name: 'Runway ML', url: 'https://runwayml.com', desc: 'AI视频和图像', icon: '🎬' },
       { name: 'Shakker AI', url: 'https://www.shakker.ai', desc: 'AI图像生成', icon: '🎨' },
       { name: '意间AI', url: 'https://www.yijian.ai', desc: 'AI绘画工具', icon: '🎯' },
+      { name: '星流', url: 'https://www.xingliu.art/?souceid=005903&utm=cg&cgv=1zn5oxmeqm', desc: '面向创作者、设计师的一站式国产AI视觉创作平台', icon: '🌟' },
+      { name: '白日梦', url: 'https://aibrm.com/?utm=cg&cgv=59ng4gjnr2', desc: 'AI视频创作类AIGC创作平台', icon: '💭' },
+      { name: '01Agent', url: 'https://01agent.net/?utm=cg&cgv=rpexy6zk90', desc: '全流程内容创作智能体，专为国内主流平台优化', icon: '🤖' },
+      { name: 'JoyPix AI', url: 'https://www.joypix.ai/app/login/?utm=cg&cgv=4ony58oejx', desc: '一站式AI视频平台', icon: '🖼️' },
+      { name: 'LibTV', url: 'https://www.liblib.tv/?sourceid=005902&utm=cg&cgv=9omkl4jn4d', desc: '专业级一站式AI视频创作平台', icon: '🎬' },
     ]
   },
   {
@@ -364,7 +374,7 @@ const aiTools = [
       { name: '腾讯音乐AI', url: 'https://y.qq.com', desc: 'QQ音乐AI功能', icon: '🎧' },
       { name: '剪映配音', url: 'https://www.jianying.com', desc: 'AI配音字幕', icon: '🎵' },
       { name: '魔音工坊', url: 'https://www.moyin.com', desc: 'AI配音合成', icon: '🎙️' },
-      { name: '讯飞智作', url: 'https://zhizuo.com', desc: '讯飞AI配音', icon: '🗣️' },
+      { name: '讯飞智作', url: 'https://www.xfzhizuo.cn/?utm=cg&cgv=l41ev8dkv8', desc: '基于语音合成技术的AI数字人音视频创作平台', icon: '🎙️' },
       { name: '配音神器', url: 'https://www.peiyongshenqi.com', desc: 'AI文字转语音', icon: '📢' },
       { name: '腾讯智影配音', url: 'https://zenvideo.qq.com', desc: '腾讯AI配音', icon: '🐧' },
       { name: '通义听悟', url: 'https://tingwu.aliyun.com', desc: '阿里语音AI', icon: '👂' },
@@ -374,6 +384,7 @@ const aiTools = [
       { name: 'Buzz', url: 'https://github.com/jianfong/buzz', desc: '本地语音转字幕', icon: '🐝' },
       { name: 'Amadeus Code', url: 'https://www.amadeuscode.com', desc: 'AI作曲助手', icon: '🎼' },
       { name: '标小智AI', url: 'https://biaoti.com', desc: 'AI音频处理', icon: '🔊' },
+      { name: '音述AI', url: 'https://www.yinshu.me/?ad_channel=cakegrowth&utm=cg&cgv=qmno24zk29', desc: 'AI音乐创作与声音分享社区', icon: '🎵' },
     ]
   },
   {
@@ -428,6 +439,9 @@ const aiTools = [
       { name: 'Ollama WebUI', url: 'https://github.com/ollama-webui/ollama-webui', desc: 'Ollama网页界面', icon: '🌐' },
       { name: 'Ax', url: 'https://github.com/axinc-ai/ax-platform', desc: '自适应实验平台', icon: '🔬' },
       { name: ' Otter', url: 'https://otter-mt.github.io', desc: '多模态模型', icon: '🦦' },
+      { name: 'AstronClaw', url: 'https://agent.xfyun.cn/astron-claw?utm=cg&cgv=3rpe395e05', desc: '讯飞旗下的一键云端部署AI智能体平台', icon: '🦞' },
+      { name: '爱派AiPy', url: 'https://www.aipyaipy.com/?referral=BJ5OOSP&utm=cg&cgv=59ng4ggnr2', desc: '融合LLM与Python能力的AI智能体', icon: '🐍' },
+      { name: '码上飞', url: 'https://www.codeflying.net/?utm=cg&cgv=20epp94ew1', desc: '一站式AI应用开发智能体，可生成小程序、APP、网站', icon: '🚀' },
     ]
   },
   {
@@ -590,6 +604,8 @@ const aiTools = [
       { name: 'Studocu AI', url: 'https://www.studocu.com', desc: 'AI学习笔记', icon: '📓' },
       { name: 'Perplexity Scholar', url: 'https://www.perplexity.ai', desc: 'AI学术搜索', icon: '🔭' },
       { name: 'Scopus AI', url: 'https://www.scopus.com', desc: '学术文献AI', icon: '📚' },
+      { name: '沁言学术', url: 'https://app.qinyanai.com/?utm=cg&cgv=3mnz8w7no1', desc: 'AI学术全流程工具，覆盖查读写闭环', icon: '📚' },
+      { name: 'SpeedAI', url: 'https://speedai.com/?utm=cg&cgv=3mnz8wjno1', desc: 'AIGC检测、降重降AI平台', icon: '⚡' },
     ]
   },
   {
@@ -768,7 +784,7 @@ function App() {
         </div>
 
         <header className="header">
-          <h1>🚀 白开水AI</h1>
+          <h1>发现<span className="highlight-text">好用</span>的AI工具</h1>
           <p>发现最实用的AI工具，提升工作效率 - 专业AI导航平台</p>
         </header>
 
@@ -781,18 +797,6 @@ function App() {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
-
-      <div className="category-tabs">
-        {categories.map(cat => (
-          <button
-            key={cat}
-            className={`category-tab ${activeCategory === cat ? 'active' : ''}`}
-            onClick={() => handleCategoryChange(cat)}
-          >
-            {cat}
-          </button>
-        ))}
-      </div>
 
       {/* 直播预告弹窗 */}
       {showLiveModal && (
