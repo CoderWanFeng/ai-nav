@@ -13,9 +13,6 @@ dist-ssr
 *.local
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
 .DS_Store
 *.suo
 *.ntvs*
@@ -23,5 +20,13 @@ dist-ssr
 *.sln
 *.sw?
 
-# Workbuddy configuration
+# === IDE / Editor configs ===
 .workbuddy/
+.qoder/
+.vscode/
+.idea/
+.cursor/
+.windsurf/
+.zed/
+.codeium/
+

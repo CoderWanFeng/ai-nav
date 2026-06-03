@@ -79,8 +79,27 @@ const faqData = {
 }
 
 function FAQ() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": Object.values(faqData).flatMap(section =>
+      section.items.map(item => ({
+        "@type": "Question",
+        "name": item.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.a.replace(/\n\n/g, ' ').replace(/\n/g, ' ')
+        }
+      }))
+    )
+  };
+
   return (
     <div className="faq-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <header className="faq-header">
         <div className="container">
           <nav className="breadcrumb">

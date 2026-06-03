@@ -2,8 +2,31 @@ import { Link } from 'react-router-dom'
 import './About.css'
 
 function About() {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "白开水AI",
+    "description": "让AI像白开水一样纯净、易用、人人可及。白开水AI导航是专业的免费AI工具导航平台，收录100+热门AI工具。",
+    "url": "https://python-office.com/ai-nav",
+    "founder": { "@type": "Person", "name": "程序员晚枫" },
+    "mission": "帮助用户发现最实用、最好用的AI工具，降低AI使用门槛，共建共享AI工具生态。",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "contact@python4office.cn"
+    },
+    "sameAs": [
+      "https://python4office.cn",
+      "https://github.com/CoderWanFeng1"
+    ]
+  };
+
   return (
     <div className="about-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
       <header className="about-header">
         <div className="container">
           <nav className="breadcrumb">
