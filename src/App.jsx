@@ -903,7 +903,7 @@ function App() {
               我们相信 AI 应该像白开水一样纯净、易用、人人可及。
             </p>
             <a
-              href="https://www.python4office.cn/bks-ai/readme/"
+              href="https://www.python4office.cn/bks-ai/about/"
               target="_blank"
               rel="noopener noreferrer"
               className="about-link"
