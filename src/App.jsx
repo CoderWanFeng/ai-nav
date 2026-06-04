@@ -60,6 +60,10 @@ const aiTools = [
     items: [
       { name: 'AI免费生成PPT', url: 'https://www.aippt.cn', desc: '一句话，一分钟，一键生成PPT', icon: '📊' },
       { name: 'WPS AI', url: 'https://ai.wps.cn', desc: '金山办公AI助手', icon: '📄' },
+      { name: 'WorkBuddy', url: 'https://www.codebuddy.cn/work/', desc: '腾讯云AI办公工作台，多专家协作一站搞定', icon: '💼' },
+      { name: 'Marvis', url: 'https://marvis.qq.com/', desc: '腾讯本地大模型AI助手，文件管理远程操控', icon: '🎵' },
+      { name: 'QClaw', url: 'https://qclaw.qq.com/', desc: '腾讯电脑管家AI，微信直接对话远程干活', icon: '🦞' },
+      { name: 'QoderWork', url: 'https://qoder.com/qoderwork', desc: '阿里Qoder桌面办公助手，自动化执行任务', icon: '🐉' },
       { name: '腾讯文档AI', url: 'https://docs.qq.com', desc: '在线文档AI助手', icon: '📝' },
       { name: '飞书AI', url: 'https://www.feishu.cn', desc: '字节跳动办公AI', icon: '🚀' },
       { name: '百度文库AI', url: 'https://wenku.baidu.com', desc: '百度文档智能处理', icon: '📚' },
@@ -236,7 +240,9 @@ const aiTools = [
       { name: '豆包MarsCode', url: 'https://www.marscode.cn', desc: '字节AI编程助手', icon: '🫘' },
       { name: '文心快码', url: 'https://cloud.baidu.com/product/cb', desc: '百度AI编程', icon: '🔍' },
       { name: 'CodeBuddy', url: 'https://www.codebuddy.ai', desc: '腾讯云AI编程助手', icon: '💡' },
+      { name: 'CodeBuddy IDE', url: 'https://www.codebuddy.cn/ide/', desc: '腾讯云AI IDE，智能代码编辑器', icon: '🧩' },
       { name: 'Qoder', url: 'https://qoder.com', desc: '阿里Agentic编程', icon: '🚀' },
+      { name: 'Trae CN', url: 'https://www.trae.cn/', desc: '字节Trae国内版，AI IDE含SOLO模式', icon: '🌟' },
       { name: 'AskCodi', url: 'https://askcodi.com', desc: 'AI编程助手', icon: '❓' },
       { name: 'Aider', url: 'https://aider.chat', desc: '终端AI编程', icon: '💬' },
       { name: 'Phind', url: 'https://www.phind.com', desc: '开发者AI搜索', icon: '🔍' },
@@ -954,8 +960,17 @@ function App() {
 function getCategoryIcon(category) {
   const icons = {
     'AI对话': '💬',
+    'AI办公': '📊',
     'AI绘画': '🎨',
     'AI编程': '💻',
+    'AI视频': '🎬',
+    'AI搜索': '🔍',
+    'AI音频': '🎵',
+    'AI开源项目': '🔓',
+    'AI设计': '✏️',
+    'AI营销': '📢',
+    'AI学习': '📚',
+    'AI效率工具': '⚡',
     'AI写作': '✍️',
     'AI教程': '📚'
   }
