@@ -450,6 +450,7 @@ const aiTools = [
       { name: 'Figma AI', url: 'https://figma.com', desc: '设计协作AI', icon: '🎨' },
       { name: 'Framer AI', url: 'https://framer.com', desc: 'AI网站设计', icon: '🏗️' },
       { name: 'Uizard', url: 'https://uizard.io', desc: 'AI原型设计', icon: '✏️' },
+      { name: '堆友AI', url: 'https://d.design/?from=ab11', desc: '阿里巴巴AI设计平台，海报、图片一键生成', icon: '🎨' },
       { name: 'Galileo AI', url: 'https://usegalileo.ai', desc: 'AI UI设计', icon: '🖼️' },
       { name: 'Magician', url: 'https://magician.design', desc: 'Figma AI插件', icon: '🧙' },
       { name: 'Designs.ai', url: 'https://designs.ai', desc: 'AI设计工具', icon: '🎨' },
