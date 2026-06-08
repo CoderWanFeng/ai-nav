@@ -60,9 +60,9 @@ const aiTools = [
     items: [
       { name: 'AI免费生成PPT', url: 'https://www.aippt.cn', desc: '一句话，一分钟，一键生成PPT', icon: '📊' },
       { name: 'WPS AI', url: 'https://ai.wps.cn', desc: '金山办公AI助手', icon: '📄' },
-      { name: 'WorkBuddy', url: 'https://www.codebuddy.cn/work/', desc: '腾讯云AI办公工作台，多专家协作一站搞定', icon: '💼' },
+      { name: 'WorkBuddy', url: 'https://www.codebuddy.cn/events/invite?inviteCode=bflfcx96gj', desc: '腾讯云AI办公工作台，多专家协作一站搞定', icon: '💼' },
       { name: 'Marvis', url: 'https://marvis.qq.com/', desc: '腾讯本地大模型AI助手，文件管理远程操控', icon: '🎵' },
-      { name: 'QClaw', url: 'https://qclaw.qq.com/', desc: '腾讯电脑管家AI，微信直接对话远程干活', icon: '🦞' },
+      { name: 'QClaw', url: 'https://qclaw.qq.com?channel=6070&share_type=invite-share&invite_code=DlAQAXpt2QsIeltL', desc: '腾讯电脑管家AI，微信直接对话远程干活', icon: '🦞' },
       { name: 'QoderWork', url: 'https://qoder.com/qoderwork', desc: '阿里Qoder桌面办公助手，自动化执行任务', icon: '🐉' },
       { name: '腾讯文档AI', url: 'https://docs.qq.com', desc: '在线文档AI助手', icon: '📝' },
       { name: '飞书AI', url: 'https://www.feishu.cn', desc: '字节跳动办公AI', icon: '🚀' },
