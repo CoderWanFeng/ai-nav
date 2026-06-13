@@ -5,8 +5,8 @@
 
 set -e
 
-PROJECT_DIR="/opt/workplace/pro/ai-nav"
-DEPLOY_DIR="/opt/website/ai-nav"
+PROJECT_DIR="/opt/workplace/pro/opc-website/ai-nav"
+DEPLOY_DIR="/opt/website/opc-website/ai-nav"
 
 echo "========== 开始部署 ai-nav-demo =========="
 
