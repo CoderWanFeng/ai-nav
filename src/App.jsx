@@ -810,17 +810,17 @@ function App() {
         <div className="modal-overlay" onClick={handleCloseModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="modal-close" onClick={handleCloseModal}>×</button>
-            <h2 className="modal-title">🎁 福利教程</h2>
+            <h2 className="modal-title">🎁 限时福利</h2>
             <div className="modal-live-info">
               <div className="modal-live-item">
-                <div className="modal-live-time">⏰ 本月更新！</div>
-                <h3 className="modal-live-topic">OpenClaw入门教程 + 实战案例库</h3>
-                <p className="modal-live-desc">有手就行，一起养虾</p>
+                <div className="modal-live-time">🔥 点击就送</div>
+                <h3 className="modal-live-topic">WorkBuddy 腾讯云AI办公工作台</h3>
+                <p className="modal-live-desc">新用户点击领取 2000 积分</p>
               </div>
             </div>
             <div className="modal-actions">
               <a
-                href="https://www.python-office.com/openclaw/"
+                href="https://www.codebuddy.cn/events/invite?inviteCode=bflfcx96gj"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="modal-btn modal-btn-primary"
