@@ -717,6 +717,31 @@
   overflow: hidden;
 }
 
+/* 赞助标识 */
+.tool-badge {
+  display: inline-block;
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  color: #fff;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  margin-left: var(--space-2);
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tool-card-sponsored {
+  border-color: rgba(238, 90, 36, 0.3);
+  background: linear-gradient(135deg, var(--surface-card) 0%, rgba(255, 107, 107, 0.03) 100%);
+}
+
+.tool-card-sponsored:hover {
+  border-color: #ee5a24;
+  box-shadow: 0 4px 20px rgba(238, 90, 36, 0.15);
+}
+
 /* ============================================
    ABOUT SECTION
    ============================================ */

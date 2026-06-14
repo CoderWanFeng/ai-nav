@@ -668,6 +668,24 @@ const aiTools = [
       { name: 'Scispace AI', url: 'https://scispace.com', desc: 'AI科研助手', icon: '🔬' },
     ]
   },
+  {
+    category: '赞助推广',
+    items: [
+      { name: 'LiblibAI', url: 'https://www.liblib.art/?souceid=005904&utm=cg&cgv=2znrw0okr7', desc: '中国领先的AI创作平台', icon: '🖼️', badge: '赞助' },
+      { name: '星流 (Xingliu)', url: 'https://www.xingliu.art/?souceid=005903&utm=cg&cgv=1zn5oxmeqm', desc: '新一代设计Agent', icon: '⭐', badge: '赞助' },
+      { name: '墨刀AI', url: 'https://modao.cc/feature/ai?utm_channel=wl&utm_source=referrals&utm_keyword=cakegrowth&utm=cg&cgv=5ln1qj3erw', desc: '激发无限创造力', icon: '🎨', badge: '赞助' },
+      { name: '超级简历WonderCV', url: 'https://www.wondercv.com/?utm=cg&cgv=zdkjoy9e1r', desc: 'AI智能简历制作工具', icon: '📝', badge: '赞助' },
+      { name: '讯飞智作', url: 'https://www.xfzhizuo.cn/?utm=cg&cgv=l41ev8dkv8', desc: 'AI虚拟数字人视频制作', icon: '🎬', badge: '赞助' },
+      { name: '音述 (Yinshu)', url: 'https://www.yinshu.me/?ad_channel=cakegrowth&utm=cg&cgv=qmno24zk29', desc: '全球最强中文AI音乐创作平台', icon: '🎵', badge: '赞助' },
+      { name: 'SpeedAI', url: 'https://speedai.com/?utm=cg&cgv=3mnz8wjno1', desc: 'AI Humanizer & AI Detector', icon: '⚡', badge: '赞助' },
+      { name: '白日梦AI', url: 'https://aibrm.com/?utm=cg&cgv=59ng4gjnr2', desc: 'AI视频创作类AIGC创作平台', icon: '🎥', badge: '赞助' },
+      { name: 'AiPPT', url: 'https://www.aippt.cn/plugin?utm_type=CJDHZ&utm_source=cakegrowth&utm_page=home&utm_plan=dhzfx&utm_unit=c1&utm_keyword=40515276&utm=cg&cgv=20epp9dew1', desc: 'AI智能PPT制作软件', icon: '📊', badge: '赞助' },
+      { name: 'iSlide', url: 'https://www.islide.cc/landing?utm=cg&cgv=rpexy6vk90', desc: 'PPT模板下载平台', icon: '📑', badge: '赞助' },
+      { name: '沁言学术', url: 'https://app.qinyanai.com/?utm=cg&cgv=3mnz8w7no1', desc: 'AI写作与文献助手一站式平台', icon: '📚', badge: '赞助' },
+      { name: 'CodeFlying', url: 'https://www.codeflying.net/?utm=cg&cgv=20epp94ew1', desc: 'AI自动软件、小程序、APP应用开发平台', icon: '🚀', badge: '赞助' },
+      { name: 'MiniMax Token', url: 'https://platform.minimaxi.com/subscribe/token-plan?code=8T7rWtR7CZ&source=link', desc: 'AI语音/音乐/视频/图片生成，邀请好友享双重好礼', icon: '🤍', badge: '赞助' },
+    ]
+  },
 ]
 
 function App() {
@@ -855,7 +873,7 @@ function App() {
                     href={tool.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="tool-card"
+                    className={`tool-card ${tool.badge ? 'tool-card-sponsored' : ''}`}
                   >
                     <div className="tool-icon">
                       {tool.icon.startsWith('/') ? (
@@ -865,7 +883,7 @@ function App() {
                       )}
                     </div>
                     <div className="tool-info">
-                      <h3 className="tool-name">{tool.name}</h3>
+                      <h3 className="tool-name">{tool.name}{tool.badge && <span className="tool-badge">{tool.badge}</span>}</h3>
                       <p className="tool-desc">{tool.desc}</p>
                     </div>
                   </a>
@@ -881,7 +899,7 @@ function App() {
                 href={tool.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="tool-card"
+                className={`tool-card ${tool.badge ? 'tool-card-sponsored' : ''}`}
               >
                 <div className="tool-icon">
                       {tool.icon.startsWith('/') ? (
@@ -891,7 +909,7 @@ function App() {
                       )}
                     </div>
                 <div className="tool-info">
-                  <h3 className="tool-name">{tool.name}</h3>
+                  <h3 className="tool-name">{tool.name}{tool.badge && <span className="tool-badge">{tool.badge}</span>}</h3>
                   <p className="tool-category">{tool.category}</p>
                   <p className="tool-desc">{tool.desc}</p>
                 </div>
@@ -945,11 +963,11 @@ function App() {
       </footer>
       </div>
 
-      {/* 直播预告悬浮按钮 */}
+      {/* 福利活动悬浮按钮 */}
       {showLiveButton && (
         <button className="live-float-button" onClick={handleOpenModal}>
-          <span className="live-button-icon">🔴</span>
-          <span className="live-button-text">直播</span>
+          <span className="live-button-icon">🎁</span>
+          <span className="live-button-text">福利</span>
         </button>
       )}
     </div>
@@ -972,7 +990,8 @@ function getCategoryIcon(category) {
     'AI学习': '📚',
     'AI效率工具': '⚡',
     'AI写作': '✍️',
-    'AI教程': '📚'
+    'AI教程': '📚',
+    '赞助推广': '🎁'
   }
   return icons[category] || '📦'
 }
@@ -991,7 +1010,8 @@ function getCategoryDescription(category) {
     'AI营销': '涵盖Jasper、Copy.ai、Surfer SEO等营销工具，支持文案生成、SEO优化、社交媒体管理等营销场景。',
     'AI学习': '包括Khanmigo、Quizlet、Brilliant等AI学习助手，支持个性化学习、知识问答、学术研究等教育场景。',
     'AI效率工具': '提供Notion AI、Raycast、Zapier等效率工具，支持任务管理、工作流自动化、知识管理等场景。',
-    'AI开源项目': '收录LangChain、Ollama、FastGPT等优秀开源项目，帮助开发者构建自己的AI应用。'
+    'AI开源项目': '收录LangChain、Ollama、FastGPT等优秀开源项目，帮助开发者构建自己的AI应用。',
+    '赞助推广': '精选优质AI产品的返佣推广链接，每款产品都经过真实使用体验推荐。'
   }
   return descriptions[category] || '探索各类AI工具，提升工作和学习效率。'
 }
