@@ -207,7 +207,6 @@ const aiTools = [
       { name: '星流', url: 'https://www.xingliu.art/?souceid=005903&utm=cg&cgv=1zn5oxmeqm', desc: '面向创作者、设计师的一站式国产AI视觉创作平台', icon: '🌟' },
       { name: '白日梦', url: 'https://aibrm.com/?utm=cg&cgv=59ng4gjnr2', desc: 'AI视频创作类AIGC创作平台', icon: '💭' },
       { name: '01Agent', url: 'https://01agent.net/?utm=cg&cgv=rpexy6zk90', desc: '全流程内容创作智能体，专为国内主流平台优化', icon: '🤖' },
-      { name: 'JoyPix AI', url: 'https://www.joypix.ai/app/login/?utm=cg&cgv=4ony58oejx', desc: '一站式AI视频平台', icon: '🖼️' },
       { name: 'LibTV', url: 'https://www.liblib.tv/?sourceid=005902&utm=cg&cgv=9omkl4jn4d', desc: '专业级一站式AI视频创作平台', icon: '🎬' },
     ]
   },
@@ -684,6 +683,7 @@ const aiTools = [
       { name: '沁言学术', url: 'https://app.qinyanai.com/?utm=cg&cgv=3mnz8w7no1', desc: 'AI写作与文献助手一站式平台', icon: '📚', badge: '赞助' },
       { name: 'CodeFlying', url: 'https://www.codeflying.net/?utm=cg&cgv=20epp94ew1', desc: 'AI自动软件、小程序、APP应用开发平台', icon: '🚀', badge: '赞助' },
       { name: 'MiniMax Token', url: 'https://platform.minimaxi.com/subscribe/token-plan?code=8T7rWtR7CZ&source=link', desc: 'AI语音/音乐/视频/图片生成，邀请好友享双重好礼', icon: '🤍', badge: '赞助' },
+      { name: 'WorkBuddy 腾讯云AI办公工作台', url: 'https://www.codebuddy.cn/events/invite/?inviteCode=bflfcx96gj', desc: '新用户点击领取 2000 积分', icon: '💻', badge: '赞助' },
     ]
   },
 ]
@@ -832,18 +832,18 @@ function App() {
             <div className="modal-live-info">
               <div className="modal-live-item">
                 <div className="modal-live-time">🔥 点击就送</div>
-                <h3 className="modal-live-topic">WorkBuddy 腾讯云AI办公工作台</h3>
-                <p className="modal-live-desc">新用户点击领取 2000 积分</p>
+                <h3 className="modal-live-topic">想做视频号 / 抖音 / 小红书？</h3>
+                <p className="modal-live-desc">AI 帮你一键生成，不用学剪辑，免费试用 3 次。</p>
               </div>
             </div>
             <div className="modal-actions">
               <a
-                href="https://www.codebuddy.cn/events/invite?inviteCode=bflfcx96gj"
+                href="https://www.liblib.tv/?sourceid=005902&utm=cg&cgv=9omkl4jn4d"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="modal-btn modal-btn-primary"
               >
-                🎁 点击领取
+                免费试用 →
               </a>
             </div>
           </div>
