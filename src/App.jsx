@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './App.css'
 import aipptLogo from './assets/ai-办公/aippt-logo.png'
@@ -688,6 +688,58 @@ const aiTools = [
   },
 ]
 
+// 场景入口卡片：点击后切到对应分类，并把精选工具置顶
+const SCENARIOS = [
+  {
+    id: 'chat',
+    emoji: '💬',
+    title: 'AI 聊天',
+    desc: 'ChatGPT、Claude、DeepSeek',
+    category: 'AI对话',
+    featured: ['ChatGPT', 'Claude', 'DeepSeek', 'Kimi', '豆包'],
+  },
+  {
+    id: 'write',
+    emoji: '✍️',
+    title: '写周报/总结',
+    desc: 'Notion AI、秘塔、ChatDOC',
+    category: 'AI办公',
+    featured: ['Notion AI', '秘塔写作猫', 'WPS AI', 'ChatDOC', '腾讯文档AI'],
+  },
+  {
+    id: 'image',
+    emoji: '🎨',
+    title: '生成图片',
+    desc: 'Midjourney、SD、DALL·E',
+    category: 'AI绘画',
+    featured: ['Midjourney', 'Stable Diffusion', 'DALL·E 3', '即梦AI', '通义万相'],
+  },
+  {
+    id: 'code',
+    emoji: '💻',
+    title: '写代码',
+    desc: 'Copilot、Cursor、通义灵码',
+    category: 'AI编程',
+    featured: ['GitHub Copilot', 'Cursor', '通义灵码', 'Trae', 'CodeBuddy'],
+  },
+  {
+    id: 'ppt',
+    emoji: '📊',
+    title: '做 PPT',
+    desc: 'AiPPT、iSlide、Gamma',
+    category: 'AI办公',
+    featured: ['AI免费生成PPT', 'iSlide PPT', 'Gamma', 'AiPPT插件', 'Tome'],
+  },
+  {
+    id: 'video',
+    emoji: '🎬',
+    title: '生成视频',
+    desc: 'Sora、Runway、可灵',
+    category: 'AI视频',
+    featured: ['Sora', 'Runway', 'Kling AI', '海螺AI', 'Pika'],
+  },
+]
+
 function App() {
   const organizationSchema = {
     "@context": "https://schema.org",
@@ -710,15 +762,58 @@ function App() {
 
   const [searchTerm, setSearchTerm] = useState('')
   const [activeCategory, setActiveCategory] = useState('全部')
+  const [activeScenario, setActiveScenario] = useState(null) // 当前选中的场景 id
+  const [showAllInCategory, setShowAllInCategory] = useState(false) // 是否展开"查看更多"
   const [showLiveModal, setShowLiveModal] = useState(true)
   const [showLiveButton, setShowLiveButton] = useState(false)
   const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [scenarioGuideVisible, setScenarioGuideVisible] = useState(false) // 首卡引导气泡
+  const [scenarioGuideArmed, setScenarioGuideArmed] = useState(false) // 是否进入"待触发"态
 
-  const categories = ['全部', ...aiTools.map(t => t.category)]
+  // 首卡引导气泡：仅在首次访问时显示，3 秒后自动消失
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const hasShown = localStorage.getItem('scenarioGuideShown') === 'true'
+    if (hasShown) return
+    // 略等页面渲染稳定再亮起
+    const t1 = setTimeout(() => {
+      setScenarioGuideArmed(true)
+      setScenarioGuideVisible(true)
+    }, 600)
+    // 3 秒后自动收
+    const t2 = setTimeout(() => {
+      setScenarioGuideVisible(false)
+      localStorage.setItem('scenarioGuideShown', 'true')
+    }, 6000)
+    return () => {
+      clearTimeout(t1)
+      clearTimeout(t2)
+    }
+  }, [])
+
+  // 主动关闭引导气泡（用户点击/hover 到首卡时）
+  const dismissScenarioGuide = () => {
+    if (!scenarioGuideArmed) return
+    setScenarioGuideVisible(false)
+    setScenarioGuideArmed(false)
+    localStorage.setItem('scenarioGuideShown', 'true')
+  }
+
+  const categories = ['全部', ...Array.from(new Set(aiTools.map(t => t.category)))]
 
   // 切换分类并滚动到内容区
   const handleCategoryChange = (cat) => {
     setActiveCategory(cat)
+    setActiveScenario(null) // 直接切分类时清掉场景态
+    setShowAllInCategory(false)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  // 点击场景卡片：切到对应分类 + 激活场景态（精选置顶）
+  const handleScenarioClick = (scenario) => {
+    setActiveCategory(scenario.category)
+    setActiveScenario(scenario.id)
+    setShowAllInCategory(false)
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
@@ -744,14 +839,28 @@ function App() {
     }
   })
 
-  const filteredTools = aiTools.flatMap(category =>
-    category.items.map(item => ({ ...item, category: category.category }))
+  const filteredTools = aiTools.flatMap(categoryGroup =>
+    categoryGroup.items.map(item => ({ ...item, category: categoryGroup.category }))
   ).filter(tool => {
     const matchesSearch = tool.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          tool.desc.toLowerCase().includes(searchTerm.toLowerCase())
     const matchesCategory = activeCategory === '全部' || tool.category === activeCategory
     return matchesSearch && matchesCategory
   })
+
+  // 当前场景（如果有）+ 精选工具列表
+  const currentScenario = activeScenario
+    ? SCENARIOS.find(s => s.id === activeScenario)
+    : null
+  const scenarioFeaturedNames = currentScenario
+    ? new Set(currentScenario.featured)
+    : null
+  const featuredInList = scenarioFeaturedNames
+    ? filteredTools.filter(t => scenarioFeaturedNames.has(t.name))
+    : []
+  const restInList = scenarioFeaturedNames
+    ? filteredTools.filter(t => !scenarioFeaturedNames.has(t.name))
+    : []
 
   return (
     <div className="app">
@@ -823,6 +932,44 @@ function App() {
           />
         </div>
 
+        {/* 场景入口卡片：帮助用户快速找到入口 */}
+        <section className="scenarios-section" aria-label="热门场景">
+          <h2 className="scenarios-title">🎯 你想做什么？</h2>
+          <div className="scenarios-grid">
+            {SCENARIOS.map((scenario, idx) => {
+              const isFirst = idx === 0
+              return (
+                <div key={scenario.id} className="scenario-card-wrap">
+                  {isFirst && <span className="scenario-card-badge">✨ 推荐</span>}
+                  <button
+                    type="button"
+                    className={`scenario-card ${isFirst ? 'scenario-card-featured' : ''} ${activeScenario === scenario.id ? 'active' : ''}`}
+                    onClick={() => {
+                      if (isFirst) dismissScenarioGuide()
+                      handleScenarioClick(scenario)
+                    }}
+                    onMouseEnter={() => {
+                      if (isFirst) dismissScenarioGuide()
+                    }}
+                  >
+                    <span className="scenario-emoji">{scenario.emoji}</span>
+                    <span className="scenario-info">
+                      <span className="scenario-card-title">{scenario.title}</span>
+                      <span className="scenario-card-desc">{scenario.desc}</span>
+                    </span>
+                  </button>
+                  {isFirst && scenarioGuideVisible && (
+                    <div className="scenario-guide-bubble" role="tooltip">
+                      <span className="scenario-guide-arrow" aria-hidden>👆</span>
+                      <span className="scenario-guide-text">点这里开始！</span>
+                    </div>
+                  )}
+                </div>
+              )
+            })}
+          </div>
+        </section>
+
       {/* 直播预告弹窗 */}
       {showLiveModal && (
         <div className="modal-overlay" onClick={handleCloseModal}>
@@ -892,29 +1039,120 @@ function App() {
             </section>
           ))
         ) : (
-          <div className="tools-grid">
-            {filteredTools.map((tool, index) => (
-              <a
-                key={`${tool.name}-${index}`}
-                href={tool.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`tool-card ${tool.badge ? 'tool-card-sponsored' : ''}`}
-              >
-                <div className="tool-icon">
+          <div>
+            {/* 场景模式：精选置顶 */}
+            {currentScenario && (
+              <>
+                <div className="scenario-banner">
+                  <span className="scenario-banner-emoji">{currentScenario.emoji}</span>
+                  <div className="scenario-banner-text">
+                    <h2 className="scenario-banner-title">{currentScenario.title} · 为你精选</h2>
+                    <p className="scenario-banner-desc">以下是该场景下最常用的 {featuredInList.length} 款工具，点击卡片直接访问。</p>
+                  </div>
+                  <button
+                    type="button"
+                    className="scenario-banner-close"
+                    onClick={() => {
+                      setActiveScenario(null)
+                      setShowAllInCategory(false)
+                    }}
+                  >
+                    退出精选
+                  </button>
+                </div>
+                <div className="tools-grid">
+                  {featuredInList.map((tool, index) => (
+                    <a
+                      key={`featured-${tool.name}-${index}`}
+                      href={tool.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`tool-card tool-card-featured ${tool.badge ? 'tool-card-sponsored' : ''}`}
+                    >
+                      <div className="tool-icon">
+                        {tool.icon.startsWith('/') ? (
+                          <img src={tool.icon} alt={tool.name} className="tool-icon-img" />
+                        ) : (
+                          tool.icon
+                        )}
+                      </div>
+                      <div className="tool-info">
+                        <h3 className="tool-name">{tool.name}{tool.badge && <span className="tool-badge">{tool.badge}</span>}<span className="tool-featured-tag">精选</span></h3>
+                        <p className="tool-category">{tool.category}</p>
+                        <p className="tool-desc">{tool.desc}</p>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+                {restInList.length > 0 && (
+                  <div className="scenario-more">
+                    <button
+                      type="button"
+                      className="scenario-more-toggle"
+                      onClick={() => setShowAllInCategory(v => !v)}
+                    >
+                      {showAllInCategory
+                        ? `收起更多（${restInList.length}）`
+                        : `查看更多 ${restInList.length} 款同类工具 →`}
+                    </button>
+                    {showAllInCategory && (
+                      <div className="tools-grid">
+                        {restInList.map((tool, index) => (
+                          <a
+                            key={`rest-${tool.name}-${index}`}
+                            href={tool.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`tool-card ${tool.badge ? 'tool-card-sponsored' : ''}`}
+                          >
+                            <div className="tool-icon">
+                              {tool.icon.startsWith('/') ? (
+                                <img src={tool.icon} alt={tool.name} className="tool-icon-img" />
+                              ) : (
+                                tool.icon
+                              )}
+                            </div>
+                            <div className="tool-info">
+                              <h3 className="tool-name">{tool.name}{tool.badge && <span className="tool-badge">{tool.badge}</span>}</h3>
+                              <p className="tool-category">{tool.category}</p>
+                              <p className="tool-desc">{tool.desc}</p>
+                            </div>
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </>
+            )}
+
+            {/* 非场景模式：原样展示搜索/分类结果 */}
+            {!currentScenario && (
+              <div className="tools-grid">
+                {filteredTools.map((tool, index) => (
+                  <a
+                    key={`${tool.name}-${index}`}
+                    href={tool.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`tool-card ${tool.badge ? 'tool-card-sponsored' : ''}`}
+                  >
+                    <div className="tool-icon">
                       {tool.icon.startsWith('/') ? (
                         <img src={tool.icon} alt={tool.name} className="tool-icon-img" />
                       ) : (
                         tool.icon
                       )}
                     </div>
-                <div className="tool-info">
-                  <h3 className="tool-name">{tool.name}{tool.badge && <span className="tool-badge">{tool.badge}</span>}</h3>
-                  <p className="tool-category">{tool.category}</p>
-                  <p className="tool-desc">{tool.desc}</p>
-                </div>
-              </a>
-            ))}
+                    <div className="tool-info">
+                      <h3 className="tool-name">{tool.name}{tool.badge && <span className="tool-badge">{tool.badge}</span>}</h3>
+                      <p className="tool-category">{tool.category}</p>
+                      <p className="tool-desc">{tool.desc}</p>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
         )}
       </main>
