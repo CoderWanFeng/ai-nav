@@ -16,8 +16,8 @@ function About() {
       "email": "contact@python4office.cn"
     },
     "sameAs": [
-      "https://python4office.cn",
-      "https://github.com/CoderWanFeng1"
+      "https://www.python4office.cn",
+      "https://github.com/CoderWanFeng"
     ]
   };
 

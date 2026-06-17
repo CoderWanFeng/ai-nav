@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import './FAQ.css'
 
+const GITHUB_EDIT_URL = 'https://github.com/CoderWanFeng/ai-nav/edit/master/src/pages/FAQ.jsx'
+
 const faqData = {
   general: {
     title: 'AI工具常见问题',

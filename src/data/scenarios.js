@@ -1,0 +1,51 @@
+export const SCENARIOS = [
+  {
+    id: 'chat',
+    emoji: '💬',
+    title: 'AI 聊天',
+    desc: 'ChatGPT、Claude、DeepSeek',
+    category: 'AI对话',
+    featured: ['ChatGPT', 'Claude', 'DeepSeek', 'Kimi', '豆包'],
+  },
+  {
+    id: 'write',
+    emoji: '✍️',
+    title: '写周报/总结',
+    desc: 'Notion AI、秘塔、ChatDOC',
+    category: 'AI办公',
+    featured: ['Notion AI', '秘塔写作猫', 'WPS AI', 'ChatDOC', '腾讯文档AI'],
+  },
+  {
+    id: 'image',
+    emoji: '🎨',
+    title: '生成图片',
+    desc: 'Midjourney、SD、DALL·E',
+    category: 'AI绘画',
+    featured: ['Midjourney', 'Stable Diffusion', 'DALL·E 3', '即梦AI', '通义万相'],
+  },
+  {
+    id: 'code',
+    emoji: '💻',
+    title: '写代码',
+    desc: 'Copilot、Cursor、通义灵码',
+    category: 'AI编程',
+    featured: ['GitHub Copilot', 'Cursor', '通义灵码', 'Trae', 'CodeBuddy'],
+  },
+  {
+    id: 'ppt',
+    emoji: '📊',
+    title: '做 PPT',
+    desc: 'AiPPT、iSlide、Gamma',
+    category: 'AI办公',
+    featured: ['AI免费生成PPT', 'iSlide PPT', 'Gamma', 'AiPPT插件', 'Tome'],
+  },
+  {
+    id: 'video',
+    emoji: '🎬',
+    title: '生成视频',
+    desc: 'Sora、Runway、可灵',
+    category: 'AI视频',
+    featured: ['Sora', 'Runway', 'Kling AI', '海螺AI', 'Pika'],
+  },
+]
+
