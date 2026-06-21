@@ -1,4 +1,4 @@
-const MODAL_LINK = 'https://www.liblib.tv/?sourceid=005902&utm=cg&cgv=9omkl4jn4d'
+const MODAL_LINK = 'https://opc.aliyun.com/products?utm_content=g_1000413977&userCode=t6duaoe1'
 
 /**
  * 福利/直播弹窗：首次访问展示
@@ -14,9 +14,9 @@ function LiveModal({ onClose }) {
         <h2 className="modal-title">🎁 限时福利</h2>
         <div className="modal-live-info">
           <div className="modal-live-item">
-            <div className="modal-live-time">🔥 点击就送</div>
-            <h3 className="modal-live-topic">想做视频号 / 抖音 / 小红书？</h3>
-            <p className="modal-live-desc">AI 帮你一键生成，不用学剪辑，免费试用 3 次。</p>
+            <div className="modal-live-time">🔥 新人专享</div>
+            <h3 className="modal-live-topic">想一站式接入 AI 能力？</h3>
+            <p className="modal-live-desc">阿里云 OPC 开放能力中心，大模型、Agent、应用工具一站搞定。</p>
           </div>
         </div>
         <div className="modal-actions">
@@ -26,7 +26,7 @@ function LiveModal({ onClose }) {
             rel="noopener noreferrer"
             className="modal-btn modal-btn-primary"
           >
-            免费试用 →
+            立即查看 →
           </a>
         </div>
       </div>
