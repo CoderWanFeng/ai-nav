@@ -71,3 +71,4 @@ pnpm-debug.log*
 .zed/
 *.swp
 *.swo
+docs/*

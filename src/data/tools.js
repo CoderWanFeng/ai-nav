@@ -21,6 +21,7 @@ export const aiTools = [
       { name: 'Poe', url: 'https://poe.com', desc: 'Quora AI聊天聚合平台', icon: '📚' },
       { name: 'Coze', url: 'https://www.coze.cn', desc: '字节AI应用开发平台', icon: '🔧' },
       { name: 'Coze AI', url: 'https://coze.com', desc: '国际版AI Bot开发平台', icon: '🤖' },
+      { name: 'updream', url: 'https://updream.cgref.cn/s/qyk4zr8n87', desc: '一站式AI视频创作平台', icon: '🛠️' },
       { name: 'Dify', url: 'https://dify.ai', desc: '开源LLM应用开发平台', icon: '🔮' },
       { name: '钉钉AI', url: 'https://www.dingtalk.com', desc: '钉钉AI助理', icon: '📌' },
       { name: '企业微信AI', url: 'https://work.weixin.qq.com', desc: '企业微信AI助手', icon: '💼' },
@@ -54,6 +55,7 @@ export const aiTools = [
     category: 'AI办公',
     items: [
       { name: 'AI免费生成PPT', url: 'https://www.aippt.cn', desc: '一句话，一分钟，一键生成PPT', icon: '📊' },
+      { name: '咔片Cappt', url: 'https://cappt.cgref.cn/s/59ngwy5er2', desc: 'AI驱动的商业演示平台', icon: '📽️' },
       { name: 'WPS AI', url: 'https://ai.wps.cn', desc: '金山办公AI助手', icon: '📄' },
       { name: 'WorkBuddy', url: 'https://www.codebuddy.cn/events/invite?inviteCode=bflfcx96gj', desc: '腾讯云AI办公工作台，多专家协作一站搞定', icon: '💼' },
       { name: 'Marvis', url: 'https://marvis.qq.com/', desc: '腾讯本地大模型AI助手，文件管理远程操控', icon: '🎵' },
@@ -277,6 +279,7 @@ export const aiTools = [
       { name: 'DeepBrain AI', url: 'https://www.deepbrain.io', desc: 'AI数字人平台', icon: '🧠' },
       { name: 'Gen-3 Alpha', url: 'https://runwayml.com/gen3', desc: 'Runway第三代视频', icon: '🌟' },
       { name: 'Kling AI', url: 'https://klingai.kuaishou.com', desc: '快手可灵视频', icon: '🎬' },
+      { name: 'Seko', url: 'https://seko.cgref.cn/s/rpe3l6xe05', desc: '商汤AI视频创作平台', icon: '🎞️' },
       { name: 'Vidu', url: 'https://www.vidu.cn', desc: '生数科技视频生成', icon: '🎥' },
       { name: 'ModelScope', url: 'https://modelscope.cn', desc: '阿里视频生成', icon: '🔬' },
       { name: '腾讯混元', url: 'https://hunyuan.tencent.com', desc: '腾讯视频AI', icon: '🐧' },
@@ -677,6 +680,10 @@ export const aiTools = [
       { name: 'CodeFlying', url: 'https://www.codeflying.net/?utm=cg&cgv=20epp94ew1', desc: 'AI自动软件、小程序、APP应用开发平台', icon: '🚀', badge: '赞助' },
       { name: 'MiniMax Token', url: 'https://platform.minimaxi.com/subscribe/token-plan?code=8T7rWtR7CZ&source=link', desc: 'AI语音/音乐/视频/图片生成，邀请好友享双重好礼', icon: '🤍', badge: '赞助' },
       { name: 'WorkBuddy 腾讯云AI办公工作台', url: 'https://www.codebuddy.cn/events/invite/?inviteCode=bflfcx96gj', desc: '新用户点击领取 2000 积分', icon: '💻', badge: '赞助' },
+      { name: 'updream', url: 'https://updream.cgref.cn/s/qyk4zr8n87', desc: '一站式AI视频创作平台', icon: '🛠️', badge: '赞助' },
+      { name: 'Laper AI剧本', url: 'https://laper.cgref.cn/s/50k9jq7ng6', desc: 'AI驱动的智能剧本创作平台', icon: '🎬', badge: '赞助' },
+      { name: 'Seko商汤AI视频', url: 'https://seko.cgref.cn/s/rpe3l6xe05', desc: '商汤AI视频创作平台', icon: '🎞️', badge: '赞助' },
+      { name: '咔片Cappt', url: 'https://cappt.cgref.cn/s/59ngwy5er2', desc: 'AI驱动的商业演示平台', icon: '📽️', badge: '赞助' },
     ]
   },
 ]
