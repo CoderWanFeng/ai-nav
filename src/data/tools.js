@@ -568,7 +568,7 @@ export const aiTools = [
       { name: 'Quizlet AI', url: 'https://quizlet.com', desc: 'AI学习卡片', icon: '📇' },
       { name: 'Chegg AI', url: 'https://www.chegg.com', desc: 'AI学习辅导', icon: '📖' },
       { name: 'Brilliant', url: 'https://brilliant.org', desc: 'AI数学科学学习', icon: '💡' },
-      { name: '上手AI', url: 'https://shangshou.ai/', desc: '全球AI情报助手，7×24快讯 + AI八卦热榜', icon: '📡' },
+      { name: '上手AI', url: 'https://shangshou.ai/', desc: '全球AI情报助手，7×24快讯 + AI八卦热榜', icon: '/assets/ai-学习/上手AI.png' },
       { name: 'IXL Learning', url: 'https://www.ixl.com', desc: 'AI个性化学习', icon: '📊' },
       { name: 'Socratic', url: 'https://socratic.org', desc: 'Google AI学习', icon: '🔍' },
       { name: 'Photomath', url: 'https://photomath.com', desc: 'AI数学解题', icon: '📐' },
