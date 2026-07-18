@@ -58,7 +58,7 @@ export const aiTools = [
       { name: '咔片Cappt', url: 'https://cappt.cgref.cn/s/59ngwy5er2', desc: 'AI驱动的商业演示平台', icon: '📽️' },
       { name: '二狗PPT', url: 'https://2dogppt.cgref.cn/s/1zn5g7rkqm', desc: '中式职场汇报PPT，AI大纲一键生成', icon: '🐕' },
       { name: 'WPS AI', url: 'https://ai.wps.cn', desc: '金山办公AI助手', icon: '📄' },
-      { name: 'WorkBuddy', url: 'https://www.codebuddy.cn/events/invite?inviteCode=bflfcx96gj', desc: '腾讯云AI办公工作台，多专家协作一站搞定', icon: '💼' },
+      { name: 'WorkBuddy', url: 'https://www.codebuddy.cn/events/invite?inviteCode=ic1tpbrj2x', desc: '腾讯云AI办公工作台，多专家协作一站搞定', icon: '💼' },
       { name: 'Marvis', url: 'https://marvis.qq.com/', desc: '腾讯本地大模型AI助手，文件管理远程操控', icon: '🎵' },
       { name: 'QClaw', url: 'https://qclaw.qq.com?channel=6070&share_type=invite-share&invite_code=DlAQAXpt2QsIeltL', desc: '腾讯电脑管家AI，微信直接对话远程干活', icon: '🦞' },
       { name: 'QoderWork', url: 'https://qoder.com.cn/referral?referral_code=7hPA1lbgPnEN1rduTBYoGuQShMTnm11Q ', desc: '阿里Qoder桌面办公助手，自动化执行任务', icon: '🐉' },
