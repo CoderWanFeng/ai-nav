@@ -68,6 +68,7 @@ export const aiTools = [
       { name: 'Notion AI', url: 'https://www.notion.so/product/ai', desc: '智能写作助手', icon: '✍️' },
       { name: '秘塔写作猫', url: 'https://xiezuocat.com', desc: '中文AI写作改写', icon: '🐱' },
       { name: '蛙蛙写作', url: 'https://wawawriter.cgref.cn/s/xpn8xloezw', desc: 'AI小说/剧本创作，Weaver大模型', icon: '🐸' },
+      { name: '讯飞绘文', url: 'https://turbodesk.cgref.cn/s/ogewmgrnp2', desc: '讯飞一站式AIGC内容运营平台，写作配图排版发布', icon: '🖋️' },
       { name: 'ChatDOC', url: 'https://chatdoc.com', desc: 'AI文档分析和问答', icon: '📋' },
       { name: 'Monica', url: 'https://monica.im', desc: 'AI助手 浏览器插件', icon: '🎭' },
       { name: 'Copy.ai', url: 'https://www.copy.ai', desc: 'AI营销文案生成', icon: '📢' },
@@ -696,6 +697,7 @@ export const aiTools = [
       { name: 'Loomy', url: 'https://loomy.cgref.cn/s/j7n6gjje1g', desc: '讯飞桌面AI助理，自媒体/办公/盯盘一站搞定', icon: '🦄', badge: '赞助' },
       { name: '蛙蛙写作', url: 'https://wawawriter.cgref.cn/s/xpn8xloezw', desc: 'AI小说/剧本创作，Weaver大模型', icon: '🐸', badge: '赞助' },
       { name: '切问学术', url: 'https://qiewenpaper.cgref.cn/s/ogewmd4np2', desc: '复旦NLP学术智能体，论文检索+全自动复现', icon: '🎓', badge: '赞助' },
+      { name: '讯飞绘文', url: 'https://turbodesk.cgref.cn/s/ogewmgrnp2', desc: '一站式AIGC内容运营平台，30分钟生成通用稿件', icon: '🖋️', badge: '赞助' },
     ]
   },
 ]
