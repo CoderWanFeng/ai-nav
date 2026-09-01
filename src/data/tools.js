@@ -697,6 +697,8 @@ export const aiTools = [
       { name: '蛙蛙写作', url: 'https://wawawriter.cgref.cn/s/xpn8xloezw', desc: 'AI小说/剧本创作，Weaver大模型', icon: '🐸', badge: '赞助' },
       { name: '切问学术', url: 'https://qiewenpaper.cgref.cn/s/ogewmd4np2', desc: '复旦NLP学术智能体，论文检索+全自动复现', icon: '🎓', badge: '赞助' },
       { name: '讯飞绘文', url: 'https://turbodesk.cgref.cn/s/ogewmgrnp2', desc: '一站式AIGC内容运营平台，30分钟生成通用稿件', icon: '🖋️', badge: '赞助' },
+      { name: 'Lovart', url: 'https://lovart.cgref.cn/s/p3kqm3peol', desc: 'AI设计代理，秒出海报与品牌物料', icon: '🎨', badge: '赞助' },
+      { name: '讯飞星火桌面端', url: 'https://xinghuo.xfyun.cn/desk/?ch=xfxh-aigjtf53', desc: '讯飞星火AI桌面助手，写作/问答/PPT一站搞定', icon: '🔥', badge: '赞助' },
     ]
   },
 ]
