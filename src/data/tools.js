@@ -686,7 +686,7 @@ export const aiTools = [
       { name: '沁言学术', url: 'https://qinyanai.cgref.cn/s/3mnz8w7no1', desc: 'AI写作与文献助手一站式平台', icon: '📚', badge: '赞助' },
       { name: '码上飞', url: 'https://codeflying.cgref.cn/s/20epp94ew1', desc: 'AI自动软件、小程序、APP应用开发平台', icon: '🚀', badge: '赞助' },
       { name: 'MiniMax Token', url: 'https://platform.minimaxi.com/subscribe/token-plan?code=8T7rWtR7CZ&source=link', desc: 'AI语音/音乐/视频/图片生成，邀请好友享双重好礼', icon: '🤍', badge: '赞助' },
-      { name: 'WorkBuddy', url: 'https://www.workbuddy.cn/events/invite?inviteCode=ic1tpbrj2x', desc: '新用户点击领取 2000 积分', icon: '💻', badge: '赞助' },
+      { name: 'WorkBuddy', url: 'https://www.workbuddy.cn/events/invite?inviteCode=flmcbaugkh', desc: '新用户点击领取 2000 积分', icon: '💻', badge: '赞助' },
       { name: 'updream', url: 'https://updream.cgref.cn/s/qyk4zr8n87', desc: '一站式AI视频创作平台', icon: '🛠️', badge: '赞助' },
       { name: 'Laper AI剧本', url: 'https://laper.cgref.cn/s/50k9jq7ng6', desc: 'AI驱动的智能剧本创作平台', icon: '🎬', badge: '赞助' },
       { name: 'Seko商汤AI视频', url: 'https://seko.cgref.cn/s/rpe3l6xe05', desc: '商汤AI视频创作平台', icon: '🎞️', badge: '赞助' },
