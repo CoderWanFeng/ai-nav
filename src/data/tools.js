@@ -59,6 +59,7 @@ export const aiTools = [
       { name: '二狗PPT', url: 'https://2dogppt.cgref.cn/s/1zn5g7rkqm', desc: '中式职场汇报PPT，AI大纲一键生成', icon: '🐕' },
       { name: 'WPS AI', url: 'https://ai.wps.cn', desc: '金山办公AI助手', icon: '📄' },
       { name: 'WorkBuddy', url: 'https://www.codebuddy.cn/events/invite?inviteCode=ic1tpbrj2x', desc: '腾讯云AI办公工作台，多专家协作一站搞定', icon: '💼' },
+      { name: '超级麦吉', url: 'https://letsmagic.cgref.cn/s/ogewp75np2', desc: '任务型AI办公平台，100+数字员工与技能，云端自动执行任务', icon: '🧑‍💼' },
       { name: 'Marvis', url: 'https://marvis.qq.com/', desc: '腾讯本地大模型AI助手，文件管理远程操控', icon: '🎵' },
       { name: 'QClaw', url: 'https://qclaw.qq.com?channel=6070&share_type=invite-share&invite_code=DlAQAXpt2QsIeltL', desc: '腾讯电脑管家AI，微信直接对话远程干活', icon: '🦞' },
       { name: 'QoderWork', url: 'https://qoder.com.cn/referral?referral_code=7hPA1lbgPnEN1rduTBYoGuQShMTnm11Q ', desc: '阿里Qoder桌面办公助手，自动化执行任务', icon: '🐉' },
@@ -68,6 +69,7 @@ export const aiTools = [
       { name: 'Notion AI', url: 'https://www.notion.so/product/ai', desc: '智能写作助手', icon: '✍️' },
       { name: '秘塔写作猫', url: 'https://xiezuocat.com', desc: '中文AI写作改写', icon: '🐱' },
       { name: '蛙蛙写作', url: 'https://wawawriter.cgref.cn/s/xpn8xloezw', desc: 'AI小说/剧本创作，Weaver大模型', icon: '🐸' },
+      { name: '剧云', url: 'https://jucloud.cgref.cn/s/3mnzj57ko1', desc: '本土化AI剧本一站式写作平台，覆盖构思到定稿', icon: '📜' },
       { name: '讯飞绘文', url: 'https://turbodesk.cgref.cn/s/ogewmgrnp2', desc: '讯飞一站式AIGC内容运营平台，写作配图排版发布', icon: '🖋️' },
       { name: 'ChatDOC', url: 'https://chatdoc.com', desc: 'AI文档分析和问答', icon: '📋' },
       { name: 'Monica', url: 'https://monica.im', desc: 'AI助手 浏览器插件', icon: '🎭' },
@@ -121,7 +123,7 @@ export const aiTools = [
       { name: '语雀AI', url: 'https://www.yuque.com', desc: '阿里语雀AI', icon: '🦜' },
       { name: '妙办AI', url: 'https://imiaoban.com', desc: '流程图白板AI', icon: '📊' },
       { name: '图怪兽', url: 'https://818ps.com', desc: 'AI图片设计', icon: '🎨' },
-      { name: '创客贴AI', url: 'https://www.chuangkit.com', desc: 'AI设计平台', icon: '🖼️' },
+      { name: '创客贴AI', url: 'https://chuangkit.cgref.cn/s/p3kq917nol', desc: 'AI设计平台', icon: '🖼️' },
       { name: '稿定AI', url: 'https://www.gaoding.com', desc: 'AI设计工具', icon: '✂️' },
       { name: '腾讯问卷AI', url: 'https://wj.qq.com', desc: '问卷调查AI', icon: '📋' },
       { name: '问卷星AI', url: 'https://www.wjx.cn', desc: '在线问卷AI', icon: '📝' },
@@ -140,7 +142,7 @@ export const aiTools = [
       { name: 'ChatSpace', url: 'https://www.chatspace.cn', desc: '企业文档AI', icon: '🚀' },
       { name: '墨刀AI', url: 'https://modao.cgref.cn/s/5ln1qj3erw', desc: '极速生成PRD文档、原型图、PPT、图表的智能平台', icon: '✏️' },
       { name: '超级简历WonderCV', url: 'https://wondercv.cgref.cn/s/zdkjoy9e1r', desc: '面向应届生和AI小白的智能求职平台', icon: '📄' },
-      { name: 'UP简历', url: 'https://upcv.tech/?utm=cg&cgv=9we2rzwkgo', desc: 'AI帮助用户找工作的求职平台，覆盖求职全流程', icon: '📋' },
+      { name: 'UP简历', url: 'https://upcv.cgref.cn/s/9we2rzwkgo', desc: 'AI帮助用户找工作的求职平台，覆盖求职全流程', icon: '📋' },
       { name: 'AiPPT插件', url: 'https://aippt-plugin.cgref.cn/s/20epp9dew1', desc: '内嵌于Office和WPS的智能化PPT创作工具', icon: '📊' },
       { name: 'iSlide PPT', url: 'https://islide.cgref.cn/s/rpexy6vk90', desc: 'AI一键生成PPT，内置9大资源库', icon: '🎨' },
     ]
@@ -200,13 +202,11 @@ export const aiTools = [
       { name: '灵动AI', url: 'https://www.dongmai.art', desc: 'AI图片生成', icon: '⚡' },
       { name: 'AI改图神器', url: 'https://img.logosc.cn', desc: 'AI图片处理工具箱', icon: '🛠️' },
       { name: '吐司AI生图', url: 'https://tusiart.com', desc: '国产AI绘画', icon: '🍞' },
-      { name: 'LiblibAI在线', url: 'https://liblib.cgref.cn/s/2znrw0okr7', desc: '一站式多模态AI创作平台，覆盖图片、视频生成', icon: '🌈' },
       { name: 'Runway ML', url: 'https://runwayml.com', desc: 'AI视频和图像', icon: '🎬' },
       { name: 'Shakker AI', url: 'https://www.shakker.ai', desc: 'AI图像生成', icon: '🎨' },
       { name: '意间AI', url: 'https://www.yijian.ai', desc: 'AI绘画工具', icon: '🎯' },
-      { name: '星流', url: 'https://xingliu.cgref.cn/s/1zn5oxmeqm', desc: '面向创作者、设计师的一站式国产AI视觉创作平台', icon: '🌟' },
+      { name: 'SkildArt', url: 'https://skildart.cgref.cn/s/59ng81ger2', desc: 'AI电商图与营销视频创作平台，集成多款图像模型', icon: '🖼️' },
       { name: '白日梦', url: 'https://aibrm.cgref.cn/s/59ng4gjnr2', desc: 'AI视频创作类AIGC创作平台', icon: '💭' },
-      { name: '01Agent', url: 'https://01agent.net/?utm=cg&cgv=rpexy6zk90', desc: '全流程内容创作智能体，专为国内主流平台优化', icon: '🤖' },
       { name: 'LibTV', url: 'https://libtv.cgref.cn/s/9omkl4jn4d', desc: '专业级一站式AI视频创作平台', icon: '🎬' },
     ]
   },
@@ -261,6 +261,9 @@ export const aiTools = [
       { name: 'Mistral Codestral', url: 'https://mistral.ai', desc: 'Mistral代码模型', icon: '🌍' },
       { name: 'DeepSeek Coder', url: 'https://coder.deepseek.com', desc: 'DeepSeek代码模型', icon: '🔍' },
       { name: 'CodeGeex', url: 'https://codegeex.cn', desc: '讯飞AI编程', icon: '💻' },
+      { name: '函子Zion', url: 'https://functorz.cgref.cn/s/j7n6xpyn1g', desc: '自然语言开发全栈应用，支持Web、小程序和iOS', icon: '🧩' },
+      { name: '火山引擎', url: 'https://volcengine.cgref.cn/s/omklvl7n4d', desc: '字节跳动企业级云与AI服务平台', icon: '🌋' },
+      { name: 'Agent Space', url: 'https://agentspace.cgref.cn/s/rpex2dvn90', desc: '集成Codex及多种主流大模型的Agent平台，支持按量使用', icon: '🤖' },
     ]
   },
   {
@@ -315,6 +318,10 @@ export const aiTools = [
       { name: 'PixVerse', url: 'https://pixverse.ai', desc: 'AI视频生成', icon: '✨' },
       { name: 'Morph Studio', url: 'https://www.morphstudio.com', desc: 'AI视频创作', icon: '🎬' },
       { name: 'Stable Video', url: 'https://stabletvideo.ai', desc: 'Stability AI视频', icon: '🎥' },
+      { name: 'PixTV', url: 'https://pixtv.cgref.cn/s/9we2gpwngo', desc: '聚合前沿模型和丰富模板，轻松创作AI短视频', icon: '📺' },
+      { name: 'SoundView', url: 'https://soundviewai.cgref.cn/s/4ony1qwnjx', desc: '讯飞AI视频本地化，字幕翻译、配音与口型同步', icon: '🌍' },
+      { name: '花生AI', url: 'https://huasheng.cgref.cn/s/rpe3d99k05', desc: '口播文稿自动拆分镜、匹配素材并生成MG动画', icon: '🥜' },
+      { name: 'AniShort', url: 'https://anishort.cgref.cn/s/dqndyvrn2z', desc: 'AI影视剧协同创作平台，支持多画布节点工作流', icon: '🎬' },
     ]
   },
   {
@@ -444,7 +451,6 @@ export const aiTools = [
       { name: 'Ollama WebUI', url: 'https://github.com/ollama-webui/ollama-webui', desc: 'Ollama网页界面', icon: '🌐' },
       { name: 'Ax', url: 'https://github.com/axinc-ai/ax-platform', desc: '自适应实验平台', icon: '🔬' },
       { name: ' Otter', url: 'https://otter-mt.github.io', desc: '多模态模型', icon: '🦦' },
-      { name: 'AstronClaw', url: 'https://agent.xfyun.cn/astron-claw?utm=cg&cgv=3rpe395e05', desc: '讯飞旗下的一键云端部署AI智能体平台', icon: '🦞' },
       { name: '爱派AiPy', url: 'https://www.aipyaipy.com/?referral=BJ5OOSP&utm=cg&cgv=59ng4ggnr2', desc: '融合LLM与Python能力的AI智能体', icon: '🐍' },
       { name: '码上飞', url: 'https://codeflying.cgref.cn/s/20epp94ew1', desc: '一站式AI应用开发智能体，可生成小程序、APP、网站', icon: '🚀' },
     ]
@@ -481,7 +487,7 @@ export const aiTools = [
       { name: 'Fontpair', url: 'https://fontpair.co', desc: '字体组合推荐', icon: '✒️' },
       { name: 'Microsoft Designer', url: 'https://designer.microsoft.com', desc: '微软Designer', icon: '✂️' },
       { name: '稿定设计', url: 'https://www.gaoding.com', desc: 'AI在线设计', icon: '📐' },
-      { name: '创客贴', url: 'https://www.chuangkit.com', desc: 'AI设计模板', icon: '🖼️' },
+      { name: '创客贴', url: 'https://chuangkit.cgref.cn/s/p3kq917nol', desc: 'AI设计模板', icon: '🖼️' },
       { name: '图怪兽', url: 'https://818ps.com', desc: 'AI图片设计', icon: '🎨' },
       { name: '醒图', url: 'https://xingtu.jiyong.cn', desc: '字节AI修图', icon: '✨' },
       { name: '轻颜相机', url: 'https://qingyan.mobi', desc: 'AI美颜拍照', icon: '📸' },
@@ -558,6 +564,7 @@ export const aiTools = [
       { name: 'Crystal AI', url: 'https://www.crystalknows.com', desc: 'AI性格邮件', icon: '💎' },
       { name: 'Bardeen AI', url: 'https://www.bardeen.ai', desc: 'AI工作流自动化', icon: '🤖' },
       { name: 'Pattern AI', url: 'https://pattern91.com', desc: 'AI广告优化', icon: '📐' },
+      { name: 'vibeknow', url: 'https://vibeknow.cgref.cn/s/3mnz070eo1', desc: 'AI生成可发布SEO文章，助力搜索引擎排名', icon: '📈' },
     ]
   },
   {
@@ -614,6 +621,7 @@ export const aiTools = [
       { name: 'Scopus AI', url: 'https://www.scopus.com', desc: '学术文献AI', icon: '📚' },
       { name: '沁言学术', url: 'https://qinyanai.cgref.cn/s/3mnz8w7no1', desc: 'AI学术全流程工具，覆盖查读写闭环', icon: '📚' },
       { name: 'SpeedAI', url: 'https://speedai.cgref.cn/s/3mnz8wjno1', desc: 'AIGC检测、降重降AI平台', icon: '⚡' },
+      { name: '笔灵降AI', url: 'https://ibiling.cgref.cn/s/rpex17vk90', desc: '论文一键降AI，适配主流检测平台并保留原格式', icon: '📄' },
     ]
   },
   {
@@ -668,12 +676,12 @@ export const aiTools = [
       { name: 'Readwise AI', url: 'https://readwise.io', desc: 'AI阅读记忆', icon: '📖' },
       { name: 'Elicit AI', url: 'https://elicit.org', desc: 'AI论文研究', icon: '💡' },
       { name: 'Scispace AI', url: 'https://scispace.com', desc: 'AI科研助手', icon: '🔬' },
+      { name: 'Flowith', url: 'https://flowith.cgref.cn/s/qyk4o4oe87', desc: '无限画布AI创作平台，覆盖图片、视频与内容创作', icon: '🎨' },
     ]
   },
   {
     category: '赞助推广',
     items: [
-      { name: 'LiblibAI', url: 'https://liblib.cgref.cn/s/2znrw0okr7', desc: '中国领先的AI创作平台', icon: '🖼️', badge: '赞助' },
       { name: 'LibTV', url: 'https://libtv.cgref.cn/s/9omkl4jn4d', desc: '专业级一站式AI视频创作平台', icon: '🎬' },
       { name: '墨刀AI', url: 'https://modao.cgref.cn/s/5ln1qj3erw', desc: '激发无限创造力', icon: '🎨', badge: '赞助' },
       { name: '超级简历WonderCV', url: 'https://wondercv.cgref.cn/s/zdkjoy9e1r', desc: 'AI智能简历制作工具', icon: '📝', badge: '赞助' },
@@ -697,7 +705,6 @@ export const aiTools = [
       { name: '蛙蛙写作', url: 'https://wawawriter.cgref.cn/s/xpn8xloezw', desc: 'AI小说/剧本创作，Weaver大模型', icon: '🐸', badge: '赞助' },
       { name: '切问学术', url: 'https://qiewenpaper.cgref.cn/s/ogewmd4np2', desc: '复旦NLP学术智能体，论文检索+全自动复现', icon: '🎓', badge: '赞助' },
       { name: '讯飞绘文', url: 'https://turbodesk.cgref.cn/s/ogewmgrnp2', desc: '一站式AIGC内容运营平台，30分钟生成通用稿件', icon: '🖋️', badge: '赞助' },
-      { name: 'Lovart', url: 'https://lovart.cgref.cn/s/p3kqm3peol', desc: 'AI设计代理，秒出海报与品牌物料', icon: '🎨', badge: '赞助' },
       { name: '讯飞星火桌面端', url: 'https://xinghuo.xfyun.cn/desk/?ch=xfxh-aigjtf53', desc: '讯飞星火AI桌面助手，写作/问答/PPT一站搞定', icon: '🔥', badge: '赞助' },
     ]
   },
