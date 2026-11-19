@@ -5,7 +5,7 @@ export const aiTools = [
       { name: 'ChatGPT', url: 'https://chatgpt.com', desc: 'OpenAI的AI对话助手', icon: '🤖' },
       { name: 'Claude', url: 'https://claude.ai', desc: 'Anthropic的AI助手', icon: '🧠' },
       { name: 'Gemini', url: 'https://gemini.google.com', desc: 'Google的AI对话模型', icon: '💎' },
-      { name: '千问', url: 'https://python4office.cn/ads/ai-nav/ali/Qwen/01-%E7%BE%8E%E5%A5%B3%E5%80%92%E6%8C%82%E9%87%91%E9%92%A9%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0%E7%9A%84%EF%BC%9F%E5%8E%9F%E6%9D%A5%E6%98%AF%E7%94%A8%E5%8D%83%E9%97%AEAPP%E7%9A%84AI%E7%89%B9%E6%95%88%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90%E7%9A%84/', desc: '阿里AI大模型', icon: '🏗️' },
+      { name: '千问', url: 'https://qwenwork.cn/app', desc: '阿里AI大模型，千问办公网页版入口', icon: '🏗️' },
       { name: 'DeepSeek', url: 'https://chat.deepseek.com', desc: '深度求索AI 推理能力强', icon: '🔍' },
       { name: 'Grok', url: 'https://x.com/i/grok', desc: 'xAI推出的AI对话助手', icon: '🌌' },
       { name: 'Kimi', url: 'https://kimi-bot.com/activities/zh-cn/invite/share?scenario=invite&from=share_poster&invitation_code=TZQFL2', desc: '月之暗面AI 超长上下文', icon: '🌙' },
@@ -49,6 +49,7 @@ export const aiTools = [
       { name: 'AutoGLM', url: 'https://www.autoglm.cn', desc: '智谱AI浏览器Agent', icon: '🕸️' },
       { name: 'Genspark', url: 'https://www.genspark.ai', desc: 'AI搜索和助手', icon: '✨' },
       { name: 'HuggingChat', url: 'https://huggingface.co/chat', desc: '开源AI聊天', icon: '🤗' },
+      { name: '美团 LongCat', url: 'https://longcat.chat', desc: '美团大模型，1M上下文，送1000万Token，可接入OpenAI兼容客户端', icon: '🐱' },
     ]
   },
   {
@@ -145,6 +146,9 @@ export const aiTools = [
       { name: 'UP简历', url: 'https://upcv.cgref.cn/s/9we2rzwkgo', desc: 'AI帮助用户找工作的求职平台，覆盖求职全流程', icon: '📋' },
       { name: 'AiPPT插件', url: 'https://aippt-plugin.cgref.cn/s/20epp9dew1', desc: '内嵌于Office和WPS的智能化PPT创作工具', icon: '📊' },
       { name: 'iSlide PPT', url: 'https://islide.cgref.cn/s/rpexy6vk90', desc: 'AI一键生成PPT，内置9大资源库', icon: '🎨' },
+      { name: '千问办公', url: 'https://assets.qwenwork.cn/release/latest/qwenworkcn-setup-x64.exe?response-content-disposition=attachment%3Bfilename%3Dqwenworkcn-xingdoukejiDownload78_setup-x64.exe', desc: '阿里千问办公桌面端，任务对话式AI办公，含资料空间与技能扩展（专属渠道链接）', icon: '🏢', badge: '赞助' },
+      { name: '商汤小浣熊（网页版）', url: 'https://xiaohuanxiong.com/work/home?utm_source=blmay90', desc: '商汤旗下AI办公助手，支持数据分析、文档处理与代码（网页端）', icon: '🦝', badge: '赞助' },
+      { name: '商汤小浣熊桌面端', url: 'https://xiaohuanxiong.com/download?utm_source=blmay90', desc: '商汤小浣熊客户端下载，本地文件分析更方便（桌面端）', icon: '🦝', badge: '赞助' },
     ]
   },
   {
@@ -264,6 +268,7 @@ export const aiTools = [
       { name: '函子Zion', url: 'https://functorz.cgref.cn/s/j7n6xpyn1g', desc: '自然语言开发全栈应用，支持Web、小程序和iOS', icon: '🧩' },
       { name: '火山引擎', url: 'https://volcengine.cgref.cn/s/omklvl7n4d', desc: '字节跳动企业级云与AI服务平台', icon: '🌋' },
       { name: 'Agent Space', url: 'https://agentspace.cgref.cn/s/rpex2dvn90', desc: '集成Codex及多种主流大模型的Agent平台，支持按量使用', icon: '🤖' },
+      { name: 'SecVibe', url: 'https://secvibe.gcsa.com/', desc: 'GCSA×香港大学AI代码安全工作台：AI写代码、代码审计、沙箱运行', icon: '🛡️' },
     ]
   },
   {
@@ -450,9 +455,10 @@ export const aiTools = [
       { name: 'ChatDev', url: 'https://github.com/OpenBMB/ChatDev', desc: 'AI软件公司多智能体', icon: '🏢' },
       { name: 'Ollama WebUI', url: 'https://github.com/ollama-webui/ollama-webui', desc: 'Ollama网页界面', icon: '🌐' },
       { name: 'Ax', url: 'https://github.com/axinc-ai/ax-platform', desc: '自适应实验平台', icon: '🔬' },
-      { name: ' Otter', url: 'https://otter-mt.github.io', desc: '多模态模型', icon: '🦦' },
+      { name: 'Otter', url: 'https://otter-mt.github.io', desc: '多模态模型', icon: '🦦' },
       { name: '爱派AiPy', url: 'https://www.aipyaipy.com/?referral=BJ5OOSP&utm=cg&cgv=59ng4ggnr2', desc: '融合LLM与Python能力的AI智能体', icon: '🐍' },
       { name: '码上飞', url: 'https://codeflying.cgref.cn/s/20epp94ew1', desc: '一站式AI应用开发智能体，可生成小程序、APP、网站', icon: '🚀' },
+      { name: 'FreeLLMAPI', url: 'https://freellmapi.co/', desc: '聚合多家免费大模型端点的自托管路由网关，OpenAI兼容接口，自动故障转移', icon: '🔑' },
     ]
   },
   {
@@ -677,6 +683,7 @@ export const aiTools = [
       { name: 'Elicit AI', url: 'https://elicit.org', desc: 'AI论文研究', icon: '💡' },
       { name: 'Scispace AI', url: 'https://scispace.com', desc: 'AI科研助手', icon: '🔬' },
       { name: 'Flowith', url: 'https://flowith.cgref.cn/s/qyk4o4oe87', desc: '无限画布AI创作平台，覆盖图片、视频与内容创作', icon: '🎨' },
+      { name: '腾讯云 TokenHub', url: 'https://cloud.tencent.com/product/tokenhub', desc: '腾讯云大模型Token管理与模型广场，比价与额度管理', icon: '🎫' },
     ]
   },
   {
@@ -706,6 +713,9 @@ export const aiTools = [
       { name: '切问学术', url: 'https://qiewenpaper.cgref.cn/s/ogewmd4np2', desc: '复旦NLP学术智能体，论文检索+全自动复现', icon: '🎓', badge: '赞助' },
       { name: '讯飞绘文', url: 'https://turbodesk.cgref.cn/s/ogewmgrnp2', desc: '一站式AIGC内容运营平台，30分钟生成通用稿件', icon: '🖋️', badge: '赞助' },
       { name: '讯飞星火桌面端', url: 'https://xinghuo.xfyun.cn/desk/?ch=xfxh-aigjtf53', desc: '讯飞星火AI桌面助手，写作/问答/PPT一站搞定', icon: '🔥', badge: '赞助' },
+      { name: '千问办公', url: 'https://assets.qwenwork.cn/release/latest/qwenworkcn-setup-x64.exe?response-content-disposition=attachment%3Bfilename%3Dqwenworkcn-xingdoukejiDownload78_setup-x64.exe', desc: '阿里千问办公桌面端，任务对话式AI办公（专属渠道链接）', icon: '🏢', badge: '赞助' },
+      { name: '商汤小浣熊（网页版）', url: 'https://xiaohuanxiong.com/work/home?utm_source=blmay90', desc: '商汤AI办公助手，数据分析/文档处理/代码', icon: '🦝', badge: '赞助' },
+      { name: '商汤小浣熊桌面端', url: 'https://xiaohuanxiong.com/download?utm_source=blmay90', desc: '商汤小浣熊客户端下载，本地文件分析更方便', icon: '🦝', badge: '赞助' },
     ]
   },
 ]
